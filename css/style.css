@@ -1,0 +1,54 @@
+@charset "UTF-8";
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 767.98px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("fonts/ProximaNova-Regular.eot");
+  src: local("☺"), url("fonts/ProximaNova-Regular.woff") format("woff"), url("fonts/ProximaNova-Regular.ttf") format("truetype"), url("fonts/ProximaNova-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+section, header, footer {
+  padding: 0 10px;
+}
+
+@media (min-width: 575.98px) {
+  section, header, footer {
+    padding: 0 calc(50vw - 270px);
+  }
+}
+
+@media (min-width: 767.98px) {
+  section, header, footer {
+    padding: 0 calc(50vw - 360px);
+  }
+}
+
+@media (min-width: 991.98px) {
+  section, header, footer {
+    padding: 0 calc(50vw - 480px);
+  }
+}
+
+@media (min-width: 1199.98px) {
+  section, header, footer {
+    padding: 0 calc(50vw - 554px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
