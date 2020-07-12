@@ -1,54 +1,237 @@
 @charset "UTF-8";
 html {
-  font-size: 10px;
-  font-family: sans-serif;
-  font-weight: 500;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  color: #000000;
 }
 
 @media (max-width: 767.98px) {
-  html {
-    font-size: 8px;
+  body {
+    font-size: 0.9rem;
   }
 }
 
+.header {
+  background: #ffe001 url(/images/bg-rectangle.png) no-repeat bottom right -60px;
+}
+
+.header__navbar {
+  margin: 0 58px;
+  padding-top: 40px;
+}
+
+.header__hero {
+  margin: 0 15px;
+}
+
+.navbar-top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.navbar-phone {
+  position: relative;
+  padding-right: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navbar-phone__title {
+  text-align: right;
+  padding-top: 5px;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.navbar-phone__number {
+  font-size: 29px;
+  line-height: 32px;
+}
+
+.navbar-phone__phone-pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navbar-nav-row {
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.33px;
+}
+
+.navbar-nav-row__ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+.navbar-nav-row__li {
+  display: inline-block;
+  margin-right: 47px;
+}
+
+.navbar-nav-row__li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+}
+
+.navbar-nav-row__li:last-child {
+  margin-right: 0;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.hero-block__article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.hero-block__dish {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  background: url(/images/hero-pasta.png) 0 0/cover no-repeat;
+}
+
+.hero-article {
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero-article__question {
+  margin-bottom: 15px;
+  max-width: 400px;
+  color: #000000;
+  font-family: Gabelisa;
+  font-size: 58px;
+  font-weight: 400;
+}
+
+.hero-article__title {
+  margin-bottom: 15px;
+  max-width: 650px;
+  font-family: "Fredericka";
+  font-size: 90px;
+  text-transform: uppercase;
+}
+
+.hero-article__subtitle {
+  margin-bottom: 35px;
+  max-width: 500px;
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero-article__line {
+  margin-bottom: 35px;
+  width: 68%;
+  height: 0.5px;
+  background-color: #000;
+}
+
+.hero-article__sale {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Fredericka";
+}
+
+.hero-article__sale .hero-article__sale-left-text {
+  position: relative;
+  top: 10px;
+  left: -5px;
+  max-width: 150px;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.hero-article__sale .hero-article__sale-right-text {
+  max-width: 130px;
+  line-height: 57px;
+  font-size: 57px;
+}
+
+.hero-article__order-btn {
+  margin-bottom: 158px;
+  width: 227px;
+  height: 58px;
+  border: 1px solid #000000;
+  background-color: inherit;
+  font-weight: 800;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
 @font-face {
-  font-family: 'ProximaNova';
-  src: url("fonts/ProximaNova-Regular.eot");
-  src: local("☺"), url("fonts/ProximaNova-Regular.woff") format("woff"), url("fonts/ProximaNova-Regular.ttf") format("truetype"), url("fonts/ProximaNova-Regular.svg") format("svg");
+  font-family: 'Gabelisa';
+  src: url("fonts/Gabelisa.eot");
+  src: local("☺"), url("fonts/Gabelisa.woff") format("woff"), url("fonts/Gabelisa.ttf") format("truetype"), url("fonts/Gabelisa.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-section, header, footer {
-  padding: 0 10px;
+@font-face {
+  font-family: 'Fredericka';
+  src: url("fonts/FrederickatheGreat-Regular.eot");
+  src: local("☺"), url("fonts/FrederickatheGreat-Regular.woff") format("woff"), url("fonts/FrederickatheGreat-Regular.ttf") format("truetype"), url("fonts/FrederickatheGreat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (min-width: 575.98px) {
-  section, header, footer {
-    padding: 0 calc(50vw - 270px);
-  }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
 }
 
-@media (min-width: 767.98px) {
-  section, header, footer {
-    padding: 0 calc(50vw - 360px);
-  }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-ExtraBold.eot");
+  src: local("☺"), url("fonts/Montserrat-ExtraBold.woff") format("woff"), url("fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("fonts/Montserrat-ExtraBold.svg") format("svg");
+  font-weight: 800;
+  font-style: normal;
 }
 
-@media (min-width: 991.98px) {
-  section, header, footer {
-    padding: 0 calc(50vw - 480px);
-  }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (min-width: 1199.98px) {
-  section, header, footer {
-    padding: 0 calc(50vw - 554px);
-  }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-Medium.eot");
+  src: local("☺"), url("fonts/Montserrat-Medium.woff") format("woff"), url("fonts/Montserrat-Medium.ttf") format("truetype"), url("fonts/Montserrat-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */

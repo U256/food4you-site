@@ -1,3 +1,256 @@
 .header {
-  
+  background: #ffe001 url(/images/bg-rectangle.png) no-repeat bottom right -60px;
+
+  &__navbar {
+    margin: 0 58px;
+    padding-top: 40px;
+  }
+
+  &__hero {
+    margin: 0 15px;
+  }
 }
+
+.navbar-top-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+
+  &__logo {}
+
+  &__phone {}
+}
+
+.navbar-phone {
+  position: relative;
+  padding-right: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &__title {
+    text-align: right;
+    padding-top: 5px;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  &__number {
+    font-size: 29px;
+    line-height: 32px;
+  }
+
+  &__phone-pic {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.navbar-nav-row {
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.33px;
+
+  &__ul {
+    list-style-type: none;
+    text-align: right;
+  }
+
+  &__li {
+    display: inline-block;
+    margin-right: 47px;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      font-size: 17px;
+    }
+  }
+
+  &__li:last-child {
+    margin-right: 0;
+  }
+}
+
+//hero
+.hero-block {
+  display: flex;
+  position: relative;
+
+  &__article {
+    flex: 0 1 50%;
+  }
+
+  &__dish {
+    //background container
+    flex: 0 1 50%;
+    background: url(/images/hero-pasta.png) 0 0/cover no-repeat;
+  }
+
+  &__decorations {}
+}
+
+.hero-article {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__question {
+    margin-bottom: 15px;
+    max-width: 400px;
+    color: #000000;
+    font-family: Gabelisa;
+    font-size: 58px;
+    font-weight: 400;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    max-width: 650px;
+    font-family: "Fredericka";
+    font-size: 90px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-bottom: 35px;
+    max-width: 500px;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    margin-bottom: 35px;
+    width: 68%;
+    height: 0.5px;
+    background-color: #000;
+  }
+
+  &__sale {
+    margin-bottom: 30px;
+    display: flex;
+    text-transform: uppercase;
+    font-family: "Fredericka";
+
+    .hero-article__sale-left-text {
+      position: relative;
+      top: 10px;
+      left: -5px;
+      max-width: 150px;
+      font-size: 19px;
+      line-height: 22px;
+    }
+
+    .hero-article__sale-right-text {
+      max-width: 130px;
+      line-height: 57px;
+      font-size: 57px;
+    }
+  }
+
+  &__order-btn {
+    margin-bottom: 158px;
+    width: 227px;
+    height: 58px;
+    border: 1px solid #000000;
+    background-color: inherit;
+    font-weight: 800;
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+}
+
+.hero-decorations {
+
+  &__leaf {}
+
+  &__tomat {}
+
+  &__pasta {}
+
+  &__leaf2 {}
+
+  &__round-spaghetti {}
+}
+
+
+
+
+////////media
+// .header {
+
+//   &__navbar {
+//   }
+
+//   &__hero {
+//   }
+// }
+
+// .navbar-top-row {
+
+//   &__logo {}
+
+//   &__phone {}
+// }
+
+// .navbar-phone {
+
+//   &__title {}
+
+//   &__number {}
+
+//   &__phone-pic {}
+// }
+
+// .navbar-nav-row {
+//   &__ul {
+//   }
+
+//   &__li {
+//     a {}
+//   }
+// }
+
+// .hero-block {
+
+//   &__article {}
+
+//   &__dish {}
+
+//   &__decorations {}
+// }
+
+// .hero-article {
+
+//   &__question {}
+
+//   &__title {}
+
+//   &__subtitle {}
+
+//   &__sale {
+
+//     .hero-article__sale-left-text {}
+
+//     .hero-article__sale-right-text {}
+//   }
+
+//   &__order-btn {}
+// }
+
+// .hero-decorations {
+
+//   &__leaf {}
+
+//   &__tomat {}
+
+//   &__pasta {}
+
+//   &__leaf2 {}
+
+//   &__round-spaghetti {}
+// }
