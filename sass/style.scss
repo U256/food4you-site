@@ -1,13 +1,19 @@
 html {
+   font-size: 10px;
    font-family: Montserrat, sans-serif;
    color: #000000;
 }
 
 
+@media (min-width: 1999.98px) {
+   html {
+      font-size: 13px;
+   }
+}
 
 @media (max-width: 767.98px) {
-   body {
-      font-size: 0.9rem;
+   html {
+      font-size: 9px;
    }
 }
 
@@ -18,8 +24,3 @@ html {
 @import '_try-today';
 @import '_booking';
 @import '_footer';
-
-
-@media (min-width: 1199.98px) {
-   //когда больше 1200!
-}

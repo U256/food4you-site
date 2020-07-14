@@ -1,4 +1,46 @@
 .try-today {
+  background: #999;
+  flex-direction: row;
+  display: flex;
+
+  &__block {}
+
+  &__block-1 {}
+
+  &__block-2 {}
+
+  &__block-3 {}
+}
+
+.try-block {
+  border: 1px solid #000;
+  
+  color: #ffffff;
+  text-transform: uppercase;
+
+  &__pretitle {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+
+  &__title {
+    font-size: 4.2rem;
+    line-height: 5rem;
+    font-weight: 700;
+  }
+
+  &__image {}
+  &__image-1 {}
+  &__image-2 {}
+  &__image-3 {}
+}
+
+
+
+
+
+////////@extend
+.try-today {
 
   &__block {}
 
@@ -16,4 +58,7 @@
   &__title {}
 
   &__image {}
+  &__image-1 {}
+  &__image-2 {}
+  &__image-3 {}
 }

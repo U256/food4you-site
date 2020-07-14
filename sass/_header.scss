@@ -1,12 +1,22 @@
 .header {
-  background: #ffe001 url(/images/bg-rectangle.png) no-repeat bottom right -60px;
+  height: 100vh;
+  min-height: 700px;
+  max-height: 1080px;
+  background: url(/images/bg-rectangle.svg) no-repeat center/cover;
 
   &__navbar {
+    height: 20vh;
+    min-height: 140px;
+    max-height: 216px;
     margin: 0 58px;
     padding-top: 40px;
+    font-size: 1.6rem;
   }
 
   &__hero {
+    height: 80vh;
+    min-height: 560px;
+    max-height: 864px;
     margin: 0 15px;
   }
 }
@@ -30,13 +40,13 @@
   &__title {
     text-align: right;
     padding-top: 5px;
-    font-size: 17px;
-    line-height: 22px;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
   }
 
   &__number {
-    font-size: 29px;
-    line-height: 32px;
+    font-size: 2.9rem;
+    line-height: 3.2rem;
   }
 
   &__phone-pic {
@@ -64,7 +74,7 @@
     a {
       text-decoration: none;
       color: #000;
-      font-size: 17px;
+      font-size: 1.7rem;
     }
   }
 
@@ -75,6 +85,9 @@
 
 //hero
 .hero-block {
+  height: 80vh;
+  min-height: 560px;
+  max-height: 864px;
   display: flex;
   position: relative;
 
@@ -85,10 +98,14 @@
   &__dish {
     //background container
     flex: 0 1 50%;
-    background: url(/images/hero-pasta.png) 0 0/cover no-repeat;
+    background: url(/images/hero-pasta.png) center left/contain no-repeat;
   }
 
-  &__decorations {}
+  &__decorations {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .hero-article {
@@ -100,15 +117,13 @@
 
   &__question {
     margin-bottom: 15px;
-    max-width: 400px;
     color: #000000;
     font-family: Gabelisa;
-    font-size: 58px;
+    font-size: 5.8rem;
     font-weight: 400;
   }
 
   &__title {
-    margin-bottom: 15px;
     max-width: 650px;
     font-family: "Fredericka";
     font-size: 90px;
@@ -117,8 +132,7 @@
 
   &__subtitle {
     margin-bottom: 35px;
-    max-width: 500px;
-    font-size: 27px;
+    font-size: 2.7rem;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -141,27 +155,329 @@
       top: 10px;
       left: -5px;
       max-width: 150px;
-      font-size: 19px;
-      line-height: 22px;
+      font-size: 1.9rem;
+      line-height: 2.2rem;
     }
 
     .hero-article__sale-right-text {
       max-width: 130px;
-      line-height: 57px;
-      font-size: 57px;
+      line-height: 5.7rem;
+      font-size: 5.7rem;
     }
   }
 
   &__order-btn {
-    margin-bottom: 158px;
+    //margin-bottom: 158px;
     width: 227px;
     height: 58px;
     border: 1px solid #000000;
     background-color: inherit;
     font-weight: 800;
-    font-size: 21px;
+    font-size: 2.1rem;
     text-transform: uppercase;
   }
+}
+
+.hero-decorations {
+
+  &__leaf {
+
+    position: absolute;
+    background: url(/images/header-decorations/Leaf.png) no-repeat 0 0/contain;
+    top: 2%;
+    left: 3%;
+    width: 5.9rem;
+    height: 9.6rem;
+  }
+
+  &__tomat {
+    position: absolute;
+    background: url(/images/header-decorations/Tomato.png) no-repeat 0 0/contain;
+    bottom: 45px;
+    left: 45%;
+    width: 8.1rem;
+    height: 8.1rem;
+  }
+
+  &__pasta {
+    position: absolute;
+    background: url(/images/header-decorations/Pasta.png) no-repeat 0 0/contain;
+    top: 18px;
+    left: 47%;
+    width: 9.5rem;
+    height: 9.6rem;
+  }
+
+  &__leaf2 {
+    position: absolute;
+    background: url(/images/header-decorations/Leaf2.png) no-repeat 0 0/contain;
+    bottom: 7%;
+    right: 5%;
+    width: 8.3rem;
+    height: 11rem;
+  }
+
+  &__round-spaghetti {
+    position: absolute;
+    background: url(/images/header-decorations/Spaghetti.png) no-repeat center right;
+    bottom: -136px;
+    left: -15px;
+    width: 19rem;
+    height: 30rem;
+    //box-shadow: -42px -8px 147px rgba(12, 13, 12, 0.21);
+  }
+}
+
+
+
+
+////////media
+@media (min-width: 1999.98px) {
+
+  .header {
+    min-height: 1080px;
+
+    &__navbar {
+      min-height: 216px;
+      margin-bottom: 25px;
+    }
+
+    &__hero {
+      min-height: 864px;
+      padding-bottom: 25px;
+    }
+  }
+
+  .hero-article {
+
+    &__question {
+      margin-top: 90px;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__subtitle {
+      margin-bottom: 45px;
+    }
+
+    &__sale {
+      margin-bottom: 55px;
+
+      .hero-article__sale-left-text {
+        max-width: 220PX;
+      }
+    }
+  }
+
+  .hero-block {
+
+    &__dish {
+      background: url(/images/hero-pasta.png) center/contain no-repeat;
+    }
+  }
+
+  .hero-decorations {
+
+    &__leaf {}
+
+    &__tomat {}
+
+    &__pasta {}
+
+    &__leaf2 {
+    }
+
+    &__round-spaghetti {}
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .navbar-nav-row {
+    margin-bottom: 40px;
+  }
+
+  .hero-article {
+    padding: 0 15px;
+
+    &__title {
+      font-size: 70px;
+    }
+
+    &__subtitle {
+      font-size: 25px;
+    }
+  }
+
+  .hero-decorations {
+
+    &__leaf {
+      top: -38px;
+      left: 0;
+    }
+
+    &__tomat {}
+
+    &__pasta {}
+
+    &__leaf2 {}
+
+    &__round-spaghetti {}
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  .navbar-top-row {
+    margin-bottom: 35px;
+
+    &__logo {}
+
+    &__phone {}
+  }
+
+  .hero-block {
+
+    &__article {
+      flex: 0 1 56%;
+    }
+
+    &__dish {
+      background: url(/images/hero-pasta.png) center/contain no-repeat;
+      flex: 0 1 44%;
+    }
+
+    &__decorations {}
+  }
+
+  .hero-article {
+    margin-top: 45px;
+
+    &__subtitle {
+      margin-bottom: 15px;
+    }
+
+    &__line {
+      margin-bottom: 15px;
+    }
+
+    &__order-btn {
+      margin-bottom: 80px;
+    }
+  }
+
+  .hero-decorations {
+
+    &__leaf {
+      width: 40px;
+    }
+
+    &__tomat {
+      width: 60px;
+    }
+
+    &__pasta {
+      left: 55%;
+      width: 67px;
+    }
+
+    &__leaf2 {
+      right: 0;
+      bottom: 0;
+      width: 60px;
+    }
+
+    &__round-spaghetti {
+      background: url(/images/header-decorations/Spaghetti.png) no-repeat center right/contain;
+      bottom: -136px;
+      left: -105px;
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-block {
+    flex-direction: column;
+
+    &__article {
+      order: 2;
+    }
+
+    &__dish {
+      min-height: 380px;
+    }
+
+    &__decorations {}
+  }
+
+}
+
+@media (max-width: 575.98px) {}
+
+
+
+
+
+
+//нужны чтобы их перетягивать в медиа-брейки, потом удалить:
+.header {
+
+  &__navbar {}
+
+  &__hero {}
+}
+
+.navbar-top-row {
+
+  &__logo {}
+
+  &__phone {}
+}
+
+.navbar-phone {
+
+  &__title {}
+
+  &__number {}
+
+  &__phone-pic {}
+}
+
+.navbar-nav-row {
+  &__ul {}
+
+  &__li {
+    a {}
+  }
+}
+
+.hero-block {
+
+  &__article {}
+
+  &__dish {}
+
+  &__decorations {}
+}
+
+.hero-article {
+
+  &__question {}
+
+  &__title {}
+
+  &__subtitle {}
+
+  &__sale {
+
+    .hero-article__sale-left-text {}
+
+    .hero-article__sale-right-text {}
+  }
+
+  &__order-btn {}
 }
 
 .hero-decorations {
@@ -176,81 +492,3 @@
 
   &__round-spaghetti {}
 }
-
-
-
-
-////////media
-// .header {
-
-//   &__navbar {
-//   }
-
-//   &__hero {
-//   }
-// }
-
-// .navbar-top-row {
-
-//   &__logo {}
-
-//   &__phone {}
-// }
-
-// .navbar-phone {
-
-//   &__title {}
-
-//   &__number {}
-
-//   &__phone-pic {}
-// }
-
-// .navbar-nav-row {
-//   &__ul {
-//   }
-
-//   &__li {
-//     a {}
-//   }
-// }
-
-// .hero-block {
-
-//   &__article {}
-
-//   &__dish {}
-
-//   &__decorations {}
-// }
-
-// .hero-article {
-
-//   &__question {}
-
-//   &__title {}
-
-//   &__subtitle {}
-
-//   &__sale {
-
-//     .hero-article__sale-left-text {}
-
-//     .hero-article__sale-right-text {}
-//   }
-
-//   &__order-btn {}
-// }
-
-// .hero-decorations {
-
-//   &__leaf {}
-
-//   &__tomat {}
-
-//   &__pasta {}
-
-//   &__leaf2 {}
-
-//   &__round-spaghetti {}
-// }

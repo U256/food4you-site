@@ -1,0 +1,67 @@
+.events {
+	margin: 0 15px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	display: none;
+
+		&__pretitle {
+			align-self: center;
+			font-size: 2.1rem;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		&__title {
+			align-self: center;
+			font-family: "Fredericka";
+			font-size: 4.2rem;
+			text-transform: uppercase;
+		}
+
+		&__text {
+			align-self: center;
+			font-size: 1.7rem;
+			line-height: 2.5rem;
+		}
+
+		&__carousel {
+			margin: 0 auto;
+			width: 80%;
+			max-width: 1200px;
+		}
+}
+
+
+.gallery-cell {
+	display: block;
+	border: 1px solid #000;
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+	
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-img {
+	
+	width: 100px; height: 100px;
+}
+.carousel-img-1 {
+	
+	background: url(/images/carousel-img-1.jpg);
+}
+.carousel-img-2 {}
+.carousel-img-3 {}
+.carousel-img-4 {}
+.carousel-img-5 {}
