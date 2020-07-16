@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <title>Food 4 you</title>
    <link href="css/reset.css" rel="stylesheet" type="text/css">
-   <link rel="stylesheet" href="css/flickity.min.css">
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -112,17 +112,24 @@
    <section class="events">
       <div class="events__pretitle">Discover</div>
       <div class="events__title">Upcoming Events</div>
-      <div class="events__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</div>
+      <div class="events__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+         incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+         maecenas accumsan lacus vel facilisis.</div>
       <div class="events__carousel">
-
-            <div class="main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-               <div class="gallery-cell"></div>
-               <div class="gallery-cell"></div>
-               <div class="gallery-cell"></div>
-               <div class="gallery-cell"></div>
-               <div class="gallery-cell"></div>
-
+         <div class="carousel">
+            <div class="carousel__item carousel__item-1">
+               <!-- bg image -->
             </div>
+            <div class="carousel__item carousel__item-2">
+               <!-- bg image -->
+            </div>
+            <div class="carousel__item carousel__item-3">
+               <!-- bg image -->
+            </div>
+            <div class="carousel__item carousel__item-4">
+               <!-- bg image -->
+            </div>
+         </div>
 
       </div>
    </section>
@@ -170,7 +177,9 @@
          <div class="footer__end-social-links"></div>
       </div>
    </footer>
-   <script src="js/flickity.pkgd.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="js/slick-slider-init-file.js"></script>
 </body>
 
 </html>

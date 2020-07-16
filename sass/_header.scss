@@ -109,7 +109,7 @@
 }
 
 .hero-article {
-  margin-top: 65px;
+  padding-top: 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,14 +236,17 @@
 
   .header {
     min-height: 1080px;
+    max-height: 1400px;
 
     &__navbar {
       min-height: 216px;
+      max-height: 280px;
       margin-bottom: 25px;
     }
 
     &__hero {
       min-height: 864px;
+      max-height: 1120px;
       padding-bottom: 25px;
     }
   }
@@ -251,7 +254,7 @@
   .hero-article {
 
     &__question {
-      margin-top: 90px;
+      padding-top: 90px;
     }
 
     &__title {
@@ -272,6 +275,8 @@
   }
 
   .hero-block {
+    min-height: 864px;
+    max-height: 1120px;
 
     &__dish {
       background: url(/images/hero-pasta.png) center/contain no-repeat;
@@ -299,7 +304,8 @@
   }
 
   .hero-article {
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     &__title {
       font-size: 70px;
@@ -329,6 +335,16 @@
 
 @media (max-width: 991.98px) {
 
+  .header {
+    min-height: 710px;
+    max-height: 990px;
+
+    &__hero {
+      min-height: 568px;
+      max-height: 792px;
+      padding-bottom: 25px;
+    }
+  }
   .navbar-top-row {
     margin-bottom: 35px;
 
@@ -338,8 +354,12 @@
   }
 
   .hero-block {
+    min-height: 568px;
+    max-height: 792px;  
 
     &__article {
+      display: flex;
+      align-items: center;
       flex: 0 1 56%;
     }
 
@@ -352,7 +372,6 @@
   }
 
   .hero-article {
-    margin-top: 45px;
 
     &__subtitle {
       margin-bottom: 15px;
@@ -375,6 +394,7 @@
 
     &__tomat {
       width: 60px;
+      left: 50%;
     }
 
     &__pasta {

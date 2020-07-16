@@ -1,5 +1,4 @@
 .events {
-	margin: 0 15px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -13,6 +12,7 @@
 		}
 
 		&__title {
+			margin-bottom: 2rem;
 			align-self: center;
 			font-family: "Fredericka";
 			font-size: 4.2rem;
@@ -21,47 +21,131 @@
 
 		&__text {
 			align-self: center;
+			width: 70%;
 			font-size: 1.7rem;
 			line-height: 2.5rem;
 		}
 
 		&__carousel {
+			//not equal with next class, this is jst wrapper
 			margin: 0 auto;
-			width: 80%;
-			max-width: 1200px;
+			width: 100vw;
+			max-width: 1920px;
 		}
 }
 
 
-.gallery-cell {
-	display: block;
-	border: 1px solid #000;
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  counter-increment: gallery-cell;
+
+.slick-slider { //aka 'carousel' or whatever you name it
+	.slick-list { //with paddint, all stuff that shows
+		.slick-track { //all width of carous
+			padding-top: 6rem;
+			padding-bottom: 6rem;
+
+			.slick-slide { //aka carousel__item
+				//
+			}
+		}
+	}
 }
 
-/* cell number */
-.gallery-cell:before {
-	
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+.carousel__item { //aka slick-slide
+	height: 351px;
+	background-color: #bbb;
+	overflow: visible;
+	outline: none;
 }
 
-.carousel-img {
-	
-	width: 100px; height: 100px;
+.carousel__item-1 {
+	background: #333 url(/images/carousel-img-1.jpg) no-repeat center/cover ;
 }
-.carousel-img-1 {
-	
-	background: url(/images/carousel-img-1.jpg);
+.carousel__item-2 {
+	background:#333 url(/images/carousel-img-1.jpg) no-repeat center/cover ;
 }
-.carousel-img-2 {}
-.carousel-img-3 {}
-.carousel-img-4 {}
-.carousel-img-5 {}
+.carousel__item-3 {
+	background:#333 url(/images/carousel-img-1.jpg) no-repeat center/cover ;
+}
+.carousel__item-4 {
+	background:#333 url(/images/top-dishes-1.png) no-repeat center/cover ;
+}
+.carousel__item-5 {
+	background:#333 url(/images/carousel-img-1.jpg) no-repeat center/cover ;
+	opacity: .2 ;
+}
+
+
+.slick-center { //special slick-slide
+	position: relative;
+	z-index: 3;
+	transform: scale(1.16);
+	transition: transform 0.5s ease, background-color 0.5s;
+}
+
+.arrow {
+	position: absolute;
+	z-index: 9;
+	top: 12%;
+	width: 30%; height: 70%;
+	border: none;
+	outline: none;
+	opacity: .7;
+}
+//arrows:
+.prev {
+	border: 2px solid red;
+	background: url(/images/icons/arrow-back.svg) no-repeat left center/13rem; 
+	left: 0;
+}
+.next {
+	border: 2px solid red;
+	background: url(/images/icons/arrow-next.svg) no-repeat right center/13rem; 
+	right: 0;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	li {
+		display: block;
+		width: 10px; height: 10px;
+		border-radius: 50%;
+		margin: 10px 5px 20px;
+		background-color: #dcdcdc;
+
+		button{
+			display: none;
+		}
+	}
+	.slick-active{
+		//конкретно слик-актив в классе точки, так это унив класс!
+		outline: none;
+		background-color: #ffe001;
+	}
+}
+
+
+@media (max-width: 991.98px) {
+	.carousel__item { //aka slick-slide
+		// height: 351px;
+	}
+	.arrow {
+		width: 20%;
+		// top: 25%;
+		// width: 29.5%; height: 28%;
+	}
+}
+@media (max-width: 767.98px) {
+	.carousel__item { //aka slick-slide
+		 height: 301px;
+	}
+	.slick-center {
+		outline: 5px solid #333;
+	}
+	.arrow {
+		width: 20%;
+		background-size: 8rem;
+		// top: 25%;
+		// width: 29.5%; height: 28%;
+	}
+}
