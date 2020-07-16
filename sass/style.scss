@@ -6,15 +6,16 @@ html {
 
 
 @media (min-width: 1999.98px) {
-   html {
-      font-size: 13px;
-   }
+   html {      font-size: 13px;   }
 }
 
 @media (max-width: 767.98px) {
-   html {
-      font-size: 9px;
-   }
+   html {      font-size: 9px;   }
+}
+
+.title {
+   font-family: "Fredericka";
+   text-transform: uppercase;
 }
 
 @import '_header';
@@ -24,3 +25,24 @@ html {
 @import '_try-today';
 @import '_booking';
 @import '_footer';
+
+
+@media (min-width: 1999.98px) {
+
+}
+
+@media (max-width: 1199.98px) {
+  
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px) {
+  
+}

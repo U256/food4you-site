@@ -17,6 +17,11 @@ html {
   }
 }
 
+.title {
+  font-family: "Fredericka";
+  text-transform: uppercase;
+}
+
 .header {
   height: 100vh;
   min-height: 700px;
@@ -156,9 +161,7 @@ html {
 
 .hero-article__title {
   max-width: 650px;
-  font-family: "Fredericka";
   font-size: 90px;
-  text-transform: uppercase;
 }
 
 .hero-article__subtitle {
@@ -282,7 +285,7 @@ html {
     margin-bottom: 55px;
   }
   .hero-article__sale .hero-article__sale-left-text {
-    max-width: 220PX;
+    max-width: 220px;
   }
   .hero-block {
     min-height: 864px;
@@ -294,8 +297,25 @@ html {
 }
 
 @media (max-width: 1199.98px) {
+  .header {
+    min-height: 710px;
+    max-height: 860px;
+  }
+  .header__navbar {
+    min-height: 142px;
+    max-height: 172px;
+  }
+  .header__hero {
+    min-height: 568px;
+    max-height: 688px;
+    padding-bottom: 25px;
+  }
   .navbar-nav-row {
     margin-bottom: 40px;
+  }
+  .hero-block {
+    min-height: 568px;
+    max-height: 688px;
   }
   .hero-article {
     padding-left: 15px;
@@ -314,21 +334,11 @@ html {
 }
 
 @media (max-width: 991.98px) {
-  .header {
-    min-height: 710px;
-    max-height: 990px;
-  }
   .header__hero {
-    min-height: 568px;
-    max-height: 792px;
     padding-bottom: 25px;
   }
   .navbar-top-row {
     margin-bottom: 35px;
-  }
-  .hero-block {
-    min-height: 568px;
-    max-height: 792px;
   }
   .hero-block__article {
     display: -webkit-box;
@@ -464,9 +474,7 @@ html {
 
 .top-dishes__title {
   margin-bottom: 1rem;
-  font-family: "Fredericka";
   font-size: 5rem;
-  text-transform: uppercase;
 }
 
 .top-dishes__text {
@@ -574,9 +582,7 @@ html {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-family: "Fredericka";
   font-size: 4.2rem;
-  text-transform: uppercase;
 }
 
 .events__text {
@@ -709,39 +715,39 @@ html {
 }
 
 .try-today {
-  height: 420px;
-  margin: 0 auto;
-  margin-top: 80px;
-  background: #999;
-  margin-bottom: 80px;
   width: 86%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  max-width: 1800px;
+  min-height: 420px;
+  margin: 0 auto;
+  padding: 15px;
+  margin-bottom: 80px;
 }
 
 .try-today__block {
-  min-width: 300px;
-  border: 1px solid red;
+  width: 48%;
 }
 
 .try-today__block-1 {
+  background: url(/images/try-today-1.jpg) no-repeat center/cover;
   height: 420px;
   float: left;
 }
 
 .try-today__block-2 {
+  margin-bottom: 40px;
+  background: url(/images/try-today-2.jpg) no-repeat center/cover;
   height: 192px;
   float: right;
 }
 
 .try-today__block-3 {
+  background: url(/images/try-today-3.jpg) no-repeat center/cover;
   height: 192px;
   float: right;
+}
+
+.no-float {
+  clear: both;
 }
 
 .try-block {
@@ -752,24 +758,42 @@ html {
 }
 
 .try-block__pretitle {
+  padding: 38px 0 0 38px;
   margin-right: 40%;
-  font-size: 2.5rem;
-  line-height: 3.75rem;
+  font-size: 2.5em;
 }
 
 .try-block__title {
+  padding: 0 0 0 38px;
   margin-right: 40%;
-  font-size: 4.2rem;
-  line-height: 5rem;
+  font-size: 3.3em;
+  line-height: 3.75rem;
   font-weight: 700;
 }
 
-.try-block__image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 1px solid #000;
-  height: 100%;
-  width: 40%;
+.try-block_big .try-block__pretitle_big {
+  font-size: 2.5em;
+  line-height: 3.75rem;
+}
+
+.try-block_big .try-block__title_big {
+  font-size: 4.2em;
+  line-height: 5rem;
+}
+
+@media (max-width: 1199.98px) {
+  .try-today {
+    width: 100%;
+    font-size: 8px;
+  }
+  .try-today__block {
+    width: 100%;
+  }
+  .try-today__block-1 {
+    margin-bottom: 20px;
+  }
+  .try-today__block-2 {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

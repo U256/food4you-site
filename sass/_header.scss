@@ -20,7 +20,6 @@
     margin: 0 15px;
   }
 }
-
 .navbar-top-row {
   display: flex;
   justify-content: space-between;
@@ -30,7 +29,6 @@
 
   &__phone {}
 }
-
 .navbar-phone {
   position: relative;
   padding-right: 45px;
@@ -55,7 +53,6 @@
     right: 0;
   }
 }
-
 .navbar-nav-row {
   margin-bottom: 10px;
   font-weight: 700;
@@ -125,9 +122,7 @@
 
   &__title {
     max-width: 650px;
-    font-family: "Fredericka";
     font-size: 90px;
-    text-transform: uppercase;
   }
 
   &__subtitle {
@@ -269,7 +264,7 @@
       margin-bottom: 55px;
 
       .hero-article__sale-left-text {
-        max-width: 220PX;
+        max-width: 220px;
       }
     }
   }
@@ -299,8 +294,29 @@
 }
 
 @media (max-width: 1199.98px) {
+  .header {
+    min-height: 710px;
+    max-height: 860px;
+
+    &__navbar {
+      min-height: 142px;
+      max-height: 172px;
+    }
+
+    &__hero {
+      min-height: 568px;
+      max-height: 688px;
+      padding-bottom: 25px;
+    }
+  }
+
   .navbar-nav-row {
     margin-bottom: 40px;
+  }
+  
+  .hero-block {
+    min-height: 568px;
+    max-height: 688px;
   }
 
   .hero-article {
@@ -336,12 +352,8 @@
 @media (max-width: 991.98px) {
 
   .header {
-    min-height: 710px;
-    max-height: 990px;
 
     &__hero {
-      min-height: 568px;
-      max-height: 792px;
       padding-bottom: 25px;
     }
   }
@@ -354,9 +366,6 @@
   }
 
   .hero-block {
-    min-height: 568px;
-    max-height: 792px;  
-
     &__article {
       display: flex;
       align-items: center;

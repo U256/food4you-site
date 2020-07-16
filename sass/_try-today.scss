@@ -1,36 +1,38 @@
 .try-today {
-
-  /////@extendh
-  height: 420px;
-  margin: 0 auto;
-  margin-top: 80px;
-  background: #999;
-  margin-bottom: 80px;
-  ////@extend
-
   width: 86%;
-  flex-direction: row;
-  display: flex;
+  max-width: 1800px;
+  min-height: 420px;
+  margin: 0 auto;
+  padding: 15px;
+
+  margin-bottom: 80px;
+
 
   &__block {
-    min-width: 300px;
-    border: 1px solid red;
+    width: 48%;
   }
 
-  &__block-1 {
+  &__block-1 { //big
+    background: url(/images/try-today-1.jpg) no-repeat center/cover;
     height: 420px;
     float: left;
   }
 
   &__block-2 {
+    margin-bottom: 40px;
+    background: url(/images/try-today-2.jpg) no-repeat center/cover;
     height: 192px;
     float: right;
   }
 
   &__block-3 {
+    background: url(/images/try-today-3.jpg) no-repeat center/cover;
     height: 192px;
     float: right;
   }
+}
+.no-float {
+  clear: both;
 }
 
 .try-block {
@@ -40,28 +42,33 @@
   text-transform: uppercase;
 
   &__pretitle {
+    padding: 38px 0 0 38px;
     margin-right: 40%;
-    font-size: 2.5rem;
-    line-height: 3.75rem;
+    font-size: 2.5em;
   }
 
   &__title {
+    padding: 0 0 0 38px;
     margin-right: 40%;
-    font-size: 4.2rem;
-    line-height: 5rem;
+    font-size: 3.3em;
+    line-height: 3.75rem;
     font-weight: 700;
   }
 
-  &__image {
-    position: absolute;
-    top: 0; right: 0;
-    border: 1px solid #000;
-    height: 100%;
-    width: 40%;
+}
+
+.try-block_big {
+
+  .try-block__pretitle_big {
+    font-size: 2.5em;
+    line-height: 3.75rem;
   }
-  &__image-1 {}
-  &__image-2 {}
-  &__image-3 {}
+
+  .try-block__title_big {
+    font-size: 4.2em;
+    line-height: 5rem;
+  }
+
 }
 
 
@@ -75,12 +82,50 @@
 
 
 
+@media (min-width: 1999.98px) {
 
+}
 
+@media (max-width: 1199.98px) {
+  .try-today {
+    width: 100%;
 
+    font-size: 8px;
 
+    &__block {
+      width: 100%;
+    }
 
+    &__block-1 {
+      margin-bottom: 20px;
 
+    }
+
+    &__block-2 {
+      margin-bottom: 20px;
+    }
+
+    &__block-3 {
+
+    }
+  } 
+  .try-block {
+
+    &__pretitle {}
+
+    &__title {}
+  }
+}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {
+  //рокк ебол
+}
+
+@media (max-width: 575.98px) {
+  //ТОЛЬКО тута 767 ненадо
+}
 
 
 
@@ -110,9 +155,15 @@
   &__pretitle {}
 
   &__title {}
+}
+.try-block_big {
 
-  &__image {}
-  &__image-1 {}
-  &__image-2 {}
-  &__image-3 {}
+  .try-block__pretitle_big {
+
+  }
+
+  .try-block__title_big {
+
+  }
+
 }
