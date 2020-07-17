@@ -2,7 +2,7 @@
   height: 100vh;
   min-height: 700px;
   max-height: 1080px;
-  background: url(/images/bg-rectangle.svg) no-repeat center/cover;
+  background: url(/images/bg-rectangle.png) 0 0/100% 100% no-repeat;
 
   &__navbar {
     height: 20vh;
@@ -427,11 +427,46 @@
 }
 
 @media (max-width: 767.98px) {
+  .header {
+    max-height: 100vh;
+    background-image: url(/images/bg-rectangle-sm.png);
+    &__navbar {
+      max-height: 20vh;
+    }
+
+    &__hero {
+      max-width: 80vh;
+    }
+  }
+
+  .navbar-top-row {
+
+    &__logo {}
+
+    &__phone {}
+  }
+
+  .navbar-phone {
+
+    &__title {}
+
+    &__number {}
+
+    &__phone-pic {}
+  }
+
+  .navbar-nav-row {
+    &__ul {}
+
+    &__li {
+      a {}
+    }
+  }
   .hero-block {
     flex-direction: column;
 
     &__article {
-      order: 2;
+      
     }
 
     &__dish {
@@ -441,6 +476,37 @@
     &__decorations {}
   }
 
+  .hero-article {
+
+    &__question {}
+
+    &__title {}
+
+    &__subtitle {}
+
+    &__sale {
+
+      .hero-article__sale-left-text {}
+
+      .hero-article__sale-right-text {}
+    }
+
+    &__order-btn {}
+  }
+
+  .hero-decorations {
+    display: none;
+
+    &__leaf {}
+
+    &__tomat {}
+
+    &__pasta {}
+
+    &__leaf2 {}
+
+    &__round-spaghetti {}
+  }
 }
 
 @media (max-width: 575.98px) {}

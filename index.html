@@ -157,8 +157,25 @@
    <section class="booking">
       <div class="booking__pretitle">Reservation</div>
       <div class="booking__title title">Book your table</div>
-      <form action="#" class="booking__form">
+      <form action="#" method="GET" class="booking__form">
+         <!-- action:
+            адрес ресурса, где будет обрабатываться введенная форма
 
+               method:
+            GET (умолч) -передать в браузерную строку в формате [имя параметра] = [назначение параметра]&[следующая][пара]
+            POST - позволяет передать больше, до 4кб, передача анонимна и не отражается. Например, логин и пароль-->
+         <input type="text" name="guest-name" value=" Name">
+            <!--type = чекбоксы, радио, пароль, емейл и submit! последний - чтоб отправить данные на сервак по методу в action
+               value - значение, которое будет передано на сервер 
+
+                  target:
+               как будут отображены результаты, тут или в новой вкладке. по умолчанию тут
+            -->
+         <input type="email" name="email" value="Email">
+         <input type="date" name="date" value="Date">
+         <input type="time" name="time" value=" Time">
+         <input type="number" name="number-of-persons" value="People">
+         <input type="submit" name="submit" value="Find a table" class="booking-submit">
       </form>
    </section>
    <footer class="footer">

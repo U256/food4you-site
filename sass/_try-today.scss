@@ -4,6 +4,7 @@
   min-height: 420px;
   margin: 0 auto;
   padding: 15px;
+  display: none;
 
   margin-bottom: 80px;
 
@@ -54,7 +55,6 @@
     line-height: 3.75rem;
     font-weight: 700;
   }
-
 }
 
 .try-block_big {
@@ -93,7 +93,7 @@
     font-size: 8px;
 
     &__block {
-      width: 100%;
+      // width: 100%;
     }
 
     &__block-1 {
@@ -102,7 +102,7 @@
     }
 
     &__block-2 {
-      margin-bottom: 20px;
+      //
     }
 
     &__block-3 {
@@ -117,53 +117,70 @@
   }
 }
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+  .try-today {
+    font-size: 7px; 
+
+    
+  }
+  .try-block {
+    &__pretitle {
+      padding: 20px 0 0 20px;
+    }
+
+    &__title {
+      padding: 0 0 0 20px;
+    }
+  }
+}
 
 @media (max-width: 767.98px) {
-  //рокк ебол
+  .try-today {
+
+    &__block {
+      width: 100%;
+    }
+    &__block-2 {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media (max-width: 575.98px) {
-  //ТОЛЬКО тута 767 ненадо
+
+  .try-today {
+
+    &__block {
+    }
+
+    &__block-1 {
+
+    }
+
+    &__block-2 {
+
+    }
+
+    &__block-3 {
+
+    }
 }
 
+  .try-block {
+    &__pretitle {
+      padding: 15px 0 0 15px;
+    }
 
-
-
-
-////////@extend
-.try-today {
-
-  &__block {
+    &__title {
+      padding: 0 0 0 15px;
+    }
   }
+  .try-block_big {
 
-  &__block-1 {
+    .try-block__pretitle_big {
+    }
 
+    .try-block__title_big {
+    }
   }
-
-  &__block-2 {
-
-  }
-
-  &__block-3 {
-
-  }
-}
-
-.try-block {
-
-  &__pretitle {}
-
-  &__title {}
-}
-.try-block_big {
-
-  .try-block__pretitle_big {
-
-  }
-
-  .try-block__title_big {
-
-  }
-
 }
