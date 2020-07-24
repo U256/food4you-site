@@ -427,15 +427,21 @@
 }
 
 @media (max-width: 767.98px) {
+
   .header {
+    min-height: 550px;
     max-height: 100vh;
     background-image: url(/images/bg-rectangle-sm.png);
+
     &__navbar {
-      max-height: 20vh;
+      max-height: 15vh;
     }
 
     &__hero {
-      max-width: 80vh;
+      height: 85vh;
+      min-height: 467px;
+      max-height: 85vh;
+      margin: 0;     
     }
   }
 
@@ -443,42 +449,46 @@
 
     &__logo {}
 
-    &__phone {}
+    &__phone {
+      display: none;
+    }
   }
 
-  .navbar-phone {
-
-    &__title {}
-
-    &__number {}
-
-    &__phone-pic {}
-  }
+  //.navbar-phone {} //скрыт
 
   .navbar-nav-row {
+    display: none;
     &__ul {}
 
     &__li {
       a {}
     }
   }
+
   .hero-block {
-    flex-direction: column;
+    position: relative;
+    height: 85vh;
+    min-height: 467px;
+    max-height: 85vh;
 
     &__article {
-      
+      margin-left: 0;
+      flex: 0 0 100%;
+      background: url(/images/hero-pasta.png) bottom 40px right -100px/200px 200px no-repeat;
     }
 
     &__dish {
-      min-height: 380px;
+      display: none;
     }
 
     &__decorations {}
   }
 
   .hero-article {
+    margin: 0 auto;
 
-    &__question {}
+    &__question {
+    }
 
     &__title {}
 
@@ -495,17 +505,28 @@
   }
 
   .hero-decorations {
-    display: none;
 
     &__leaf {}
 
-    &__tomat {}
+    &__tomat {
+      top: -30px;
+      left: 85%;;
+    }
 
-    &__pasta {}
+    &__pasta {
+      display: none;
+    }
 
-    &__leaf2 {}
+    &__leaf2 {
+      display: none;
+    }
 
-    &__round-spaghetti {}
+    &__round-spaghetti {
+      left: -80px; 
+      //bottom: -85px;
+      bottom: 0;
+      width: 18rem;
+    }
   }
 }
 

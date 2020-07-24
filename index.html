@@ -29,7 +29,7 @@
          </div>
          <nav class="navbar-nav-row">
             <ul class="navbar-nav-row__ul">
-               <li class="navbar-nav-row__li"><a href="#">home</a></li>
+               <li class="navbar-nav-row__li"><a id="ti" href="#">home</a></li>
                <li class="navbar-nav-row__li"><a href="#">menu</a></li>
                <li class="navbar-nav-row__li"><a href="#">our story</a> </li>
                <li class="navbar-nav-row__li"><a href="#">contact us</a></li>
@@ -37,7 +37,7 @@
          </nav>
       </div>
       <div class="header__hero">
-         <div class="hero-block">
+         <div class="hero-block"></div>
             <div class="hero-block__article">
                <div class="hero-article">
                   <div class="hero-article__question">Are You Hungry?</div>
@@ -164,37 +164,74 @@
                method:
             GET (умолч) -передать в браузерную строку в формате [имя параметра] = [назначение параметра]&[следующая][пара]
             POST - позволяет передать больше, до 4кб, передача анонимна и не отражается. Например, логин и пароль-->
-         <input type="text" name="guest-name" value=" Name">
-            <!--type = чекбоксы, радио, пароль, емейл и submit! последний - чтоб отправить данные на сервак по методу в action
+         <input type="text" name="guest-name" placeholder=" Name">
+         <!--type = чекбоксы, радио, пароль, емейл и submit! последний - чтоб отправить данные на сервак по методу в action
                value - значение, которое будет передано на сервер 
 
                   target:
                как будут отображены результаты, тут или в новой вкладке. по умолчанию тут
             -->
-         <input type="email" name="email" value="Email">
-         <input type="date" name="date" value="Date">
-         <input type="time" name="time" value=" Time">
-         <input type="number" name="number-of-persons" value="People">
+         <input type="email" name="email" placeholder="Email">
+         <input type="text" name="date" placeholder="Date">
+         <input type="time" name="time" placeholder=" Time">
+         <input type="number" name="number-of-persons" placeholder="People">
          <input type="submit" name="submit" value="Find a table" class="booking-submit">
       </form>
    </section>
    <footer class="footer">
-      <div class="footer__logo"></div>
-      <div class="footer__mid-row">
+      <div class="footer-rows footer__logo">
+         <img src="/images/icons/footer-logo.png" alt="Main-logo">
+      </div>
+      <div class="footer-rows footer__mid-row">
          <div class="footer__mid-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viver ra
             maecenas accumsan lacus vel facilisis.</div>
-         <div class="footer__mid-placepoint">Main Road, Building Name, Country</div>
-         <div class="footer__mid-mail">info@companyname.com</div>
+         <div class="footer__mid-right-side">
+            <div class="footer__mid-placepoint">Main Road, Building Name, Country</div>
+            <div class="footer__mid-mail">info@companyname.com</div>
+         </div>
       </div>
-      <div class="footer__end-row">
-         <div class="footer__end-copyright"></div>
-         <div class="footer__end-social-links"></div>
+      <div class="footer-rows footer__end-row">
+         <div class="footer__end-copyright">© Company Name 2020. All rights reserved.</div>
+         <div class="footer__end-social-links">
+            <a href="#"><img src="/images/icons/icon-instagram.png" alt="instagram"></a>
+            <a href="#"><img src="/images/icons/icon-facebook.png" alt="facebook"></a>
+            <a href="#"><img src="/images/icons/icon-twitter.png" alt="twitter"></a>
+            <a href="#"><img src="/images/icons/icon-whatsApp.png" alt="whatsApp"></a>
+         </div>
       </div>
    </footer>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
    <script src="js/slick-slider-init-file.js"></script>
+   <script>
+
+      var title = document.getElementsByClassName('title');
+      var liTags = document.getElementsByTagName("li")[2];
+      //var getFromCSS = document.querySelector(".header").innerHTML; 
+      //finds first element
+      //var getFromCSS = document.querySelectorAll("div"); 
+      //finds all. Gives array
+      console.log(liTags);
+
+      var li3 = document.getElementById('ti');
+      li3.addEventListener("click", function () {
+         document.querySelector('body').classList.toggle('red-bg');
+      });
+      let letti = function () {
+         console.log(this);
+      }
+
+      function ibg() {
+         let ibg = document.querySelectorAll(".ibg");
+         for (var i = 0; i < ibg.length; i++) {
+            if (ibg[i].querySelector('img')) {
+               ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
+            }
+         }
+      }
+      ibg();
+   </script>
 </body>
 
 </html>

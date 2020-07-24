@@ -1,0 +1,139 @@
+.booking {
+	////@extend
+	padding: 100px 0 100px 0;
+	///@inc
+	max-width: 900px;
+	min-width: 300px;
+	width: 58%;
+	margin: 0 auto;
+	text-align: center;
+
+	&__pretitle {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 2.1rem;
+		line-height: 4.583rem;
+		letter-spacing: 0.125rem;
+		margin-bottom: 11px;
+	}
+
+	&__title {
+		font-size: 5rem;
+		line-height: 4.583rem;
+		letter-spacing: 0.3rem;
+		margin-bottom: 88px;
+	}
+
+	&__form {
+	}
+}
+
+input {
+	margin: 10px;	
+	width: 45%;
+	height: 6.5rem;
+	border-radius: 0.5rem;
+	border: 0.1rem solid #bebebe;
+	padding: 0 22px;
+	color: #3d3d3d;
+	font-size: 1.7rem;	
+	line-height: 4.583rem;
+
+	&[type=text]{
+		
+	}
+
+	&[type=email]{
+		
+	}
+
+	&[type=date]{
+		
+	}
+
+	&[type=time]{
+		
+	}
+
+	&[type=number]{
+		
+	}
+}
+.booking-submit {
+	background-color: #ffe001;
+	font-size: 2.1rem;
+	font-weight: 700;
+	line-height: 4.6rem;
+	text-transform: uppercase;
+	outline: none;
+	border: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1199.98px) {
+  .booking {
+		width: 70%;
+	}
+}
+@media (max-width: 767.98px) {
+	.booking {
+		width: 90%;
+	}
+}
+@media (max-width: 767.98px) {
+	.booking {
+		width: 94%;
+	}
+
+	input {
+		width: 85%;
+	}
+}
+
+////
+
+// .booking {
+
+// 		&__pretitle {
+
+// 		}
+
+// 		&__title {
+
+// 		}
+
+// 		&__form {
+// 		}
+// }
+
+// input {
+
+// 	&[type=text]{
+		
+// 	}
+
+// 	&[type=email]{
+		
+// 	}
+
+// 	&[type=date]{
+		
+// 	}
+
+// 	&[type=time]{
+		
+// 	}
+
+// 	&[type=number]{
+		
+// 	}
+// }
+// .booking-submit {
+
+// }
