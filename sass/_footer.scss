@@ -159,6 +159,17 @@
 		&-rows {
 			margin-left: 20px;
 			margin-right: 20px;
+			font-size: 1.8rem;
+			
+		}
+
+		&__end-social-links {
+			a{
+				img {
+					width: 38px;
+					margin-left: 9px;
+				}
+			}
 		}
 	}
 }

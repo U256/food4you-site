@@ -2,7 +2,8 @@
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	display: none;
+	margin-bottom: 70px;
+
 
 	&__pretitle {
 		align-self: center;
@@ -27,7 +28,7 @@
 	&__carousel {
 		//not equal with next class, this is jst wrapper
 		margin: 0 auto;
-		width: 100vw;
+		width: 100%;
 		max-width: 1920px;
 	}
 }
@@ -35,7 +36,7 @@
 
 
 .slick-slider { //aka 'carousel' or whatever you name it
-	.slick-list { //with paddint, all stuff that shows
+	.slick-list { //with padding, all stuff that shows
 		.slick-track { //all width of carous
 			padding-top: 6rem;
 			padding-bottom: 6rem;
@@ -90,12 +91,12 @@
 }
 //arrows:
 .prev {
-	border: 2px solid red;
+	//border: 2px solid red;
 	background: url(/images/icons/arrow-back.svg) no-repeat left center/13rem; 
 	left: 0;
 }
 .next {
-	border: 2px solid red;
+	//border: 2px solid red;
 	background: url(/images/icons/arrow-next.svg) no-repeat right center/13rem; 
 	right: 0;
 }

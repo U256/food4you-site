@@ -1,14 +1,12 @@
 .top-dishes {
-  padding-top: 8rem;
   margin-bottom: 9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  display: none;
 
   &__title {
-    margin-bottom: 1rem;
+    margin: 0 15px 1rem;
     font-size: 5rem;
   }
 
@@ -21,7 +19,7 @@
   }
 
   &__items {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -37,26 +35,23 @@
     .dish-image-1{
       padding: 0 15px;
       height: 400px;
-      min-width: 400px;
       background: url(/images/top-dishes-1.png)  no-repeat center/contain;
     }
     .dish-image-2{
       padding: 0 15px;
       height: 400px;
-      min-width: 400px;
+
       background: url(/images/top-dishes-2.png) no-repeat center/contain ;
     }
     .dish-image-3{
       padding: 0 15px;
       height: 400px;
-      min-width: 400px;
       background: url(/images/top-dishes-3.png) no-repeat center/contain ;
     }
   }
 
   &__title {
-    margin-top: -8px;
-    margin-bottom: 1.5rem;
+    margin: -8px 10px 1.5rem;
     font-size: 2.1rem;
     font-weight: 700;
     line-height: 3.7rem;
@@ -87,34 +82,29 @@
 
 
 
-
-
-
-////////vlojenie
+@media (max-width: 575.98px) {
 .top-dishes {
-
-  &__title {
-  }
-
   &__text {
-  }
-
-  &__items {
+    margin-bottom: 2rem;
   }
 }
 
-.dish-item {
+  .dish-item {
+    min-width: 300px;
 
-  &__image {
-    .dish-image-1{}
-    .dish-image-2{}
-    .dish-image-3{}
+    &__image {
+    }
+
+    &__title {
+      margin-bottom: .6rem;
+    }
+
+    &__text {
+      margin-bottom: 1.6rem;
+    }
+
+    &__order-btn {}
   }
-
-  &__title {}
-
-  &__text {}
-
-  &__order-btn {}
 }
+
 

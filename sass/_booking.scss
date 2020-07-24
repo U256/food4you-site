@@ -1,11 +1,9 @@
-.booking {
-	////@extend
-	padding: 100px 0 100px 0;
-	///@inc
+.booking {	
+	margin: 0 auto 60px;
 	max-width: 900px;
 	min-width: 300px;
 	width: 58%;
-	margin: 0 auto;
+	
 	text-align: center;
 
 	&__pretitle {
@@ -83,6 +81,11 @@ input {
 }
 @media (max-width: 767.98px) {
 	.booking {
+
+		&__title{
+			margin-bottom: 30px;
+		}
+
 		width: 90%;
 	}
 }
@@ -95,45 +98,3 @@ input {
 		width: 85%;
 	}
 }
-
-////
-
-// .booking {
-
-// 		&__pretitle {
-
-// 		}
-
-// 		&__title {
-
-// 		}
-
-// 		&__form {
-// 		}
-// }
-
-// input {
-
-// 	&[type=text]{
-		
-// 	}
-
-// 	&[type=email]{
-		
-// 	}
-
-// 	&[type=date]{
-		
-// 	}
-
-// 	&[type=time]{
-		
-// 	}
-
-// 	&[type=number]{
-		
-// 	}
-// }
-// .booking-submit {
-
-// }

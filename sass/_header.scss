@@ -1,8 +1,11 @@
 .header {
   height: 100vh;
+  margin-bottom: 8rem;
   min-height: 700px;
   max-height: 1080px;
   background: url(/images/bg-rectangle.png) 0 0/100% 100% no-repeat;
+
+  
 
   &__navbar {
     height: 20vh;
@@ -14,6 +17,8 @@
   }
 
   &__hero {
+    display: flex;
+    position: relative;
     height: 80vh;
     min-height: 560px;
     max-height: 864px;
@@ -80,32 +85,8 @@
   }
 }
 
-//hero
-.hero-block {
-  height: 80vh;
-  min-height: 560px;
-  max-height: 864px;
-  display: flex;
-  position: relative;
-
-  &__article {
-    flex: 0 1 50%;
-  }
-
-  &__dish {
-    //background container
-    flex: 0 1 50%;
-    background: url(/images/hero-pasta.png) center left/contain no-repeat;
-  }
-
-  &__decorations {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .hero-article {
+  flex: 0 1 50%;
   padding-top: 65px;
   display: flex;
   flex-direction: column;
@@ -131,7 +112,6 @@
     font-weight: 700;
     text-transform: uppercase;
   }
-
   &__line {
     margin-bottom: 35px;
     width: 68%;
@@ -173,8 +153,16 @@
   }
 }
 
-.hero-decorations {
+.hero-dish {
+  //background container
+  flex: 0 1 50%;
+  background: url(/images/hero-pasta.png) center left/contain no-repeat;
+}
 
+.hero-decorations {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   &__leaf {
 
     position: absolute;
@@ -269,14 +257,11 @@
     }
   }
 
-  .hero-block {
-    min-height: 864px;
-    max-height: 1120px;
 
-    &__dish {
-      background: url(/images/hero-pasta.png) center/contain no-repeat;
-    }
+  .hero-block__dish {
+    background: url(/images/hero-pasta.png) center/contain no-repeat;
   }
+  
 
   .hero-decorations {
 
@@ -313,11 +298,6 @@
   .navbar-nav-row {
     margin-bottom: 40px;
   }
-  
-  .hero-block {
-    min-height: 568px;
-    max-height: 688px;
-  }
 
   .hero-article {
     padding-left: 15px;
@@ -352,11 +332,23 @@
 @media (max-width: 991.98px) {
 
   .header {
+    min-height: 600px;
+    max-height: 800px;
+
+    &__navbar {
+      min-height: 120px;
+      max-height: 160px;
+      margin: 0 30px;
+      padding-top: 20px;
+    }
 
     &__hero {
+      min-height: 480px;
+      max-height: 640px;
       padding-bottom: 25px;
     }
   }
+
   .navbar-top-row {
     margin-bottom: 35px;
 
@@ -365,24 +357,27 @@
     &__phone {}
   }
 
-  .hero-block {
-    &__article {
-      display: flex;
-      align-items: center;
-      flex: 0 1 56%;
-    }
-
-    &__dish {
-      background: url(/images/hero-pasta.png) center/contain no-repeat;
-      flex: 0 1 44%;
-    }
-
-    &__decorations {}
+  .hero-block__dish {
+    background: url(/images/hero-pasta.png) center/contain no-repeat;
+    flex: 0 1 44%;
   }
 
   .hero-article {
+    display: flex;
+    align-items: center;
+    flex: 0 1 56%;
+
+    &__question {
+      font-size: 4.6rem;
+    }
+
+    &__title {
+      font-size: 5rem;
+      margin-bottom: 20px;
+    }
 
     &__subtitle {
+      font-size: 20px;
       margin-bottom: 15px;
     }
 
@@ -391,7 +386,7 @@
     }
 
     &__order-btn {
-      margin-bottom: 80px;
+      margin-bottom: 30px;
     }
   }
 
@@ -429,25 +424,27 @@
 @media (max-width: 767.98px) {
 
   .header {
-    min-height: 550px;
-    max-height: 100vh;
+    min-height: 550px; //??
     background-image: url(/images/bg-rectangle-sm.png);
 
     &__navbar {
-      max-height: 15vh;
+      height: 15vh;
+      min-height: 83px;
+      max-height: 120px;
     }
 
     &__hero {
       height: 85vh;
       min-height: 467px;
-      max-height: 85vh;
+      max-height: 680px;
+      position: relative;
       margin: 0;     
     }
   }
 
   .navbar-top-row {
 
-    &__logo {}
+    // &__logo {}
 
     &__phone {
       display: none;
@@ -465,43 +462,29 @@
     }
   }
 
-  .hero-block {
-    position: relative;
-    height: 85vh;
-    min-height: 467px;
-    max-height: 85vh;
-
-    &__article {
-      margin-left: 0;
-      flex: 0 0 100%;
-      background: url(/images/hero-pasta.png) bottom 40px right -100px/200px 200px no-repeat;
-    }
-
-    &__dish {
-      display: none;
-    }
-
-    &__decorations {}
-  }
-
   .hero-article {
     margin: 0 auto;
+    flex: 0 0 100%;
+    background: url(/images/hero-pasta.png) bottom 40px right -100px/200px 200px no-repeat;
 
-    &__question {
-    }
+    // &__question {}
 
-    &__title {}
+    // &__title {}
 
-    &__subtitle {}
+    // &__subtitle {}
 
-    &__sale {
+    // &__sale {
 
-      .hero-article__sale-left-text {}
+    //   .hero-article__sale-left-text {}
 
-      .hero-article__sale-right-text {}
-    }
+    //   .hero-article__sale-right-text {}
+    // }
 
-    &__order-btn {}
+    // &__order-btn {}
+  }
+
+  .hero-dish {
+    display: none;
   }
 
   .hero-decorations {
@@ -523,88 +506,18 @@
 
     &__round-spaghetti {
       left: -80px; 
-      //bottom: -85px;
-      bottom: 0;
+      bottom: -85px;
       width: 18rem;
+      height: 18rem;
     }
   }
 }
 
-@media (max-width: 575.98px) {}
-
-
-
-
-
-
-//нужны чтобы их перетягивать в медиа-брейки, потом удалить:
-.header {
-
-  &__navbar {}
-
-  &__hero {}
-}
-
-.navbar-top-row {
-
-  &__logo {}
-
-  &__phone {}
-}
-
-.navbar-phone {
-
-  &__title {}
-
-  &__number {}
-
-  &__phone-pic {}
-}
-
-.navbar-nav-row {
-  &__ul {}
-
-  &__li {
-    a {}
+@media (max-width: 575.98px) {
+  .hero-decorations {
+    &__tomat {
+      display: none;
+    }
   }
 }
 
-.hero-block {
-
-  &__article {}
-
-  &__dish {}
-
-  &__decorations {}
-}
-
-.hero-article {
-
-  &__question {}
-
-  &__title {}
-
-  &__subtitle {}
-
-  &__sale {
-
-    .hero-article__sale-left-text {}
-
-    .hero-article__sale-right-text {}
-  }
-
-  &__order-btn {}
-}
-
-.hero-decorations {
-
-  &__leaf {}
-
-  &__tomat {}
-
-  &__pasta {}
-
-  &__leaf2 {}
-
-  &__round-spaghetti {}
-}
