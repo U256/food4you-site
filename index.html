@@ -199,34 +199,6 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
    <script src="js/slick-slider-init-file.js"></script>
-   <script>
-
-      var title = document.getElementsByClassName('title');
-      var liTags = document.getElementsByTagName("li")[2];
-      //var getFromCSS = document.querySelector(".header").innerHTML; 
-      //finds first element
-      //var getFromCSS = document.querySelectorAll("div"); 
-      //finds all. Gives array
-      console.log(liTags);
-
-      var li3 = document.getElementById('ti');
-      li3.addEventListener("click", function () {
-         document.querySelector('body').classList.toggle('red-bg');
-      });
-      let letti = function () {
-         console.log(this);
-      }
-
-      function ibg() {
-         let ibg = document.querySelectorAll(".ibg");
-         for (var i = 0; i < ibg.length; i++) {
-            if (ibg[i].querySelector('img')) {
-               ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
-            }
-         }
-      }
-      ibg();
-   </script>
 </body>
 
 </html>
