@@ -424,6 +424,15 @@ html {
             flex: 0 0 100%;
     background: url(../images/hero-pasta.png) bottom 40px right -100px/200px 200px no-repeat;
   }
+  .hero-article__question {
+    font-size: 3.5rem;
+  }
+  .hero-article__title {
+    font-size: 6rem;
+  }
+  .hero-article__subtitle {
+    font-size: 17px;
+  }
   .hero-dish {
     display: none;
   }

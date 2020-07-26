@@ -467,11 +467,19 @@
     flex: 0 0 100%;
     background: url(../images/hero-pasta.png) bottom 40px right -100px/200px 200px no-repeat;
 
-    // &__question {}
+    &__question {
+      font-size: 3.5rem;
+      
+    }
 
-    // &__title {}
+    &__title {
+      font-size: 6rem;
+      
+    }
 
-    // &__subtitle {}
+    &__subtitle {
+      font-size: 17px;
+    }
 
     // &__sale {
 
