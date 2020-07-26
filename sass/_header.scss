@@ -533,6 +533,51 @@
 }
 
 @media (max-width: 575.98px) {
+  .header {
+    height: 94vh;
+    min-height: 520px; //??
+    max-height: 658px;
+    background-image: url(../images/bg-rectangle-sm.png);
+
+    &__navbar {
+      height: 14vh;
+      min-height: 77px;
+      max-height: 98px;
+    }
+
+    &__hero {
+      height: 80vh;
+      min-height: 432px;
+      max-height: 560px;
+      position: relative;
+      margin: 0;     
+    }
+  }
+
+  .hero-article {
+    margin: 0 auto;
+    flex: 0 0 100%;
+    background: url(../images/hero-pasta.png) bottom 40px right -100px/200px 200px no-repeat;
+
+    &__question {
+      font-size: 3rem;
+      
+    }
+
+    &__title {
+      font-size: 5rem;
+      
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__order-btn {
+      width: 190px;
+      height: 45px;
+    }
+  }
   .hero-decorations {
     &__tomat {
       display: none;
