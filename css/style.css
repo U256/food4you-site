@@ -27,7 +27,7 @@ html {
   margin-bottom: 8rem;
   min-height: 700px;
   max-height: 1080px;
-  background: url(/images/bg-rectangle.png) 0 0/100% 100% no-repeat;
+  background: url(../images/bg-rectangle.png) 0 0/100% 100% no-repeat;
 }
 
 .header__navbar {
@@ -195,7 +195,7 @@ html {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  background: url(/images/hero-pasta.png) center left/contain no-repeat;
+  background: url(../images/hero-pasta.png) center left/contain no-repeat;
 }
 
 .hero-decorations {
@@ -206,7 +206,7 @@ html {
 
 .hero-decorations__leaf {
   position: absolute;
-  background: url(/images/header-decorations/Leaf.png) no-repeat 0 0/contain;
+  background: url(../images/header-decorations/Leaf.png) no-repeat 0 0/contain;
   top: 2%;
   left: 3%;
   width: 5.9rem;
@@ -215,7 +215,7 @@ html {
 
 .hero-decorations__tomat {
   position: absolute;
-  background: url(/images/header-decorations/Tomato.png) no-repeat 0 0/contain;
+  background: url(../images/header-decorations/Tomato.png) no-repeat 0 0/contain;
   bottom: 45px;
   left: 45%;
   width: 8.1rem;
@@ -224,7 +224,7 @@ html {
 
 .hero-decorations__pasta {
   position: absolute;
-  background: url(/images/header-decorations/Pasta.png) no-repeat 0 0/contain;
+  background: url(../images/header-decorations/Pasta.png) no-repeat 0 0/contain;
   top: 18px;
   left: 47%;
   width: 9.5rem;
@@ -233,7 +233,7 @@ html {
 
 .hero-decorations__leaf2 {
   position: absolute;
-  background: url(/images/header-decorations/Leaf2.png) no-repeat 0 0/contain;
+  background: url(../images/header-decorations/Leaf2.png) no-repeat 0 0/contain;
   bottom: 7%;
   right: 5%;
   width: 8.3rem;
@@ -242,7 +242,7 @@ html {
 
 .hero-decorations__round-spaghetti {
   position: absolute;
-  background: url(/images/header-decorations/Spaghetti.png) no-repeat center right;
+  background: url(../images/header-decorations/Spaghetti.png) no-repeat center right;
   bottom: -136px;
   left: -15px;
   width: 19rem;
@@ -280,7 +280,7 @@ html {
     max-width: 220px;
   }
   .hero-block__dish {
-    background: url(/images/hero-pasta.png) center/contain no-repeat;
+    background: url(../images/hero-pasta.png) center/contain no-repeat;
   }
 }
 
@@ -337,7 +337,7 @@ html {
     margin-bottom: 35px;
   }
   .hero-block__dish {
-    background: url(/images/hero-pasta.png) center/contain no-repeat;
+    background: url(../images/hero-pasta.png) center/contain no-repeat;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 44%;
             flex: 0 1 44%;
@@ -387,7 +387,7 @@ html {
     width: 60px;
   }
   .hero-decorations__round-spaghetti {
-    background: url(/images/header-decorations/Spaghetti.png) no-repeat center right/contain;
+    background: url(../images/header-decorations/Spaghetti.png) no-repeat center right/contain;
     bottom: -136px;
     left: -105px;
     width: 200px;
@@ -397,7 +397,7 @@ html {
 @media (max-width: 767.98px) {
   .header {
     min-height: 550px;
-    background-image: url(/images/bg-rectangle-sm.png);
+    background-image: url(../images/bg-rectangle-sm.png);
   }
   .header__navbar {
     height: 15vh;
@@ -422,7 +422,7 @@ html {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    background: url(/images/hero-pasta.png) bottom 40px right -100px/200px 200px no-repeat;
+    background: url(../images/hero-pasta.png) bottom 40px right -100px/200px 200px no-repeat;
   }
   .hero-dish {
     display: none;
@@ -545,25 +545,25 @@ html {
 }
 
 .dish-item__image {
-  background: url(/images/dishes-bg.svg) center/contain;
+  background: url(../images/dishes-bg.svg) center/contain;
 }
 
 .dish-item__image .dish-image-1 {
   padding: 0 15px;
   height: 400px;
-  background: url(/images/top-dishes-1.png) no-repeat center/contain;
+  background: url(../images/top-dishes-1.png) no-repeat center/contain;
 }
 
 .dish-item__image .dish-image-2 {
   padding: 0 15px;
   height: 400px;
-  background: url(/images/top-dishes-2.png) no-repeat center/contain;
+  background: url(../images/top-dishes-2.png) no-repeat center/contain;
 }
 
 .dish-item__image .dish-image-3 {
   padding: 0 15px;
   height: 400px;
-  background: url(/images/top-dishes-3.png) no-repeat center/contain;
+  background: url(../images/top-dishes-3.png) no-repeat center/contain;
 }
 
 .dish-item__title {
@@ -666,23 +666,23 @@ html {
 }
 
 .carousel__item-1 {
-  background: #333 url(/images/carousel-img-1.jpg) no-repeat center/cover;
+  background: #333 url(../images/carousel-img-1.jpg) no-repeat center/cover;
 }
 
 .carousel__item-2 {
-  background: #333 url(/images/carousel-img-1.jpg) no-repeat center/cover;
+  background: #333 url(../images/carousel-img-1.jpg) no-repeat center/cover;
 }
 
 .carousel__item-3 {
-  background: #333 url(/images/carousel-img-1.jpg) no-repeat center/cover;
+  background: #333 url(../images/carousel-img-1.jpg) no-repeat center/cover;
 }
 
 .carousel__item-4 {
-  background: #333 url(/images/top-dishes-1.png) no-repeat center/cover;
+  background: #333 url(../images/top-dishes-1.png) no-repeat center/cover;
 }
 
 .carousel__item-5 {
-  background: #333 url(/images/carousel-img-1.jpg) no-repeat center/cover;
+  background: #333 url(../images/carousel-img-1.jpg) no-repeat center/cover;
   opacity: .2;
 }
 
@@ -709,12 +709,12 @@ html {
 }
 
 .prev {
-  background: url(/images/icons/arrow-back.svg) no-repeat left center/13rem;
+  background: url(../images/icons/arrow-back.svg) no-repeat left center/13rem;
   left: 0;
 }
 
 .next {
-  background: url(/images/icons/arrow-next.svg) no-repeat right center/13rem;
+  background: url(../images/icons/arrow-next.svg) no-repeat right center/13rem;
   right: 0;
 }
 
@@ -779,20 +779,20 @@ html {
 }
 
 .try-today__block-1 {
-  background: url(/images/try-today-1.jpg) no-repeat center/cover;
+  background: url(../images/try-today-1.jpg) no-repeat center/cover;
   height: 420px;
   float: left;
 }
 
 .try-today__block-2 {
   margin-bottom: 40px;
-  background: url(/images/try-today-2.jpg) no-repeat center/cover;
+  background: url(../images/try-today-2.jpg) no-repeat center/cover;
   height: 192px;
   float: right;
 }
 
 .try-today__block-3 {
-  background: url(/images/try-today-3.jpg) no-repeat center/cover;
+  background: url(../images/try-today-3.jpg) no-repeat center/cover;
   height: 192px;
   float: right;
 }
@@ -943,7 +943,7 @@ input {
 }
 
 .footer {
-  background: url(/images/footer_bg.png) center right/cover no-repeat;
+  background: url(../images/footer_bg.png) center right/cover no-repeat;
   color: #fff;
 }
 
@@ -988,12 +988,12 @@ input {
   margin-bottom: 15px;
   line-height: 3.75rem;
   font-weight: 500;
-  background: url(/images/icons/location_icon.png) center left/31px 35px no-repeat;
+  background: url(../images/icons/location_icon.png) center left/31px 35px no-repeat;
 }
 
 .footer__mid-mail {
   padding-left: 65px;
-  background: url(/images/icons/email-icon.png) center left/29px 23px no-repeat;
+  background: url(../images/icons/email-icon.png) center left/29px 23px no-repeat;
 }
 
 .footer__end-row {

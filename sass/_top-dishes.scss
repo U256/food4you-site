@@ -31,22 +31,22 @@
   flex: 1 0 33%;
 
   &__image {
-    background: url(/images/dishes-bg.svg) center/contain;
+    background: url(../images/dishes-bg.svg) center/contain;
     .dish-image-1{
       padding: 0 15px;
       height: 400px;
-      background: url(/images/top-dishes-1.png)  no-repeat center/contain;
+      background: url(../images/top-dishes-1.png)  no-repeat center/contain;
     }
     .dish-image-2{
       padding: 0 15px;
       height: 400px;
 
-      background: url(/images/top-dishes-2.png) no-repeat center/contain ;
+      background: url(../images/top-dishes-2.png) no-repeat center/contain ;
     }
     .dish-image-3{
       padding: 0 15px;
       height: 400px;
-      background: url(/images/top-dishes-3.png) no-repeat center/contain ;
+      background: url(../images/top-dishes-3.png) no-repeat center/contain ;
     }
   }
 

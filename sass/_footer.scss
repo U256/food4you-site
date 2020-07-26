@@ -1,5 +1,5 @@
 .footer {
-	background: url(/images/footer_bg.png) center right/cover no-repeat;
+	background: url(../images/footer_bg.png) center right/cover no-repeat;
 	color: #fff;
 	
 	&-rows {
@@ -37,12 +37,12 @@
 		margin-bottom: 15px;
 		line-height: 3.75rem;
 		font-weight: 500;
-		background: url(/images/icons/location_icon.png) center left/31px 35px no-repeat;
+		background: url(../images/icons/location_icon.png) center left/31px 35px no-repeat;
 	}
 
 	&__mid-mail {
 		padding-left: 65px;
-		background: url(/images/icons/email-icon.png) center left/29px 23px no-repeat;
+		background: url(../images/icons/email-icon.png) center left/29px 23px no-repeat;
 	}
 
 	&__end-row {

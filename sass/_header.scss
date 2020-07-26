@@ -3,7 +3,7 @@
   margin-bottom: 8rem;
   min-height: 700px;
   max-height: 1080px;
-  background: url(/images/bg-rectangle.png) 0 0/100% 100% no-repeat;
+  background: url(../images/bg-rectangle.png) 0 0/100% 100% no-repeat;
 
   
 
@@ -156,7 +156,7 @@
 .hero-dish {
   //background container
   flex: 0 1 50%;
-  background: url(/images/hero-pasta.png) center left/contain no-repeat;
+  background: url(../images/hero-pasta.png) center left/contain no-repeat;
 }
 
 .hero-decorations {
@@ -166,7 +166,7 @@
   &__leaf {
 
     position: absolute;
-    background: url(/images/header-decorations/Leaf.png) no-repeat 0 0/contain;
+    background: url(../images/header-decorations/Leaf.png) no-repeat 0 0/contain;
     top: 2%;
     left: 3%;
     width: 5.9rem;
@@ -175,7 +175,7 @@
 
   &__tomat {
     position: absolute;
-    background: url(/images/header-decorations/Tomato.png) no-repeat 0 0/contain;
+    background: url(../images/header-decorations/Tomato.png) no-repeat 0 0/contain;
     bottom: 45px;
     left: 45%;
     width: 8.1rem;
@@ -184,7 +184,7 @@
 
   &__pasta {
     position: absolute;
-    background: url(/images/header-decorations/Pasta.png) no-repeat 0 0/contain;
+    background: url(../images/header-decorations/Pasta.png) no-repeat 0 0/contain;
     top: 18px;
     left: 47%;
     width: 9.5rem;
@@ -193,7 +193,7 @@
 
   &__leaf2 {
     position: absolute;
-    background: url(/images/header-decorations/Leaf2.png) no-repeat 0 0/contain;
+    background: url(../images/header-decorations/Leaf2.png) no-repeat 0 0/contain;
     bottom: 7%;
     right: 5%;
     width: 8.3rem;
@@ -202,7 +202,7 @@
 
   &__round-spaghetti {
     position: absolute;
-    background: url(/images/header-decorations/Spaghetti.png) no-repeat center right;
+    background: url(../images/header-decorations/Spaghetti.png) no-repeat center right;
     bottom: -136px;
     left: -15px;
     width: 19rem;
@@ -259,7 +259,7 @@
 
 
   .hero-block__dish {
-    background: url(/images/hero-pasta.png) center/contain no-repeat;
+    background: url(../images/hero-pasta.png) center/contain no-repeat;
   }
   
 
@@ -358,7 +358,7 @@
   }
 
   .hero-block__dish {
-    background: url(/images/hero-pasta.png) center/contain no-repeat;
+    background: url(../images/hero-pasta.png) center/contain no-repeat;
     flex: 0 1 44%;
   }
 
@@ -413,7 +413,7 @@
     }
 
     &__round-spaghetti {
-      background: url(/images/header-decorations/Spaghetti.png) no-repeat center right/contain;
+      background: url(../images/header-decorations/Spaghetti.png) no-repeat center right/contain;
       bottom: -136px;
       left: -105px;
       width: 200px;
@@ -425,7 +425,7 @@
 
   .header {
     min-height: 550px; //??
-    background-image: url(/images/bg-rectangle-sm.png);
+    background-image: url(../images/bg-rectangle-sm.png);
 
     &__navbar {
       height: 15vh;
@@ -465,7 +465,7 @@
   .hero-article {
     margin: 0 auto;
     flex: 0 0 100%;
-    background: url(/images/hero-pasta.png) bottom 40px right -100px/200px 200px no-repeat;
+    background: url(../images/hero-pasta.png) bottom 40px right -100px/200px 200px no-repeat;
 
     // &__question {}
 
