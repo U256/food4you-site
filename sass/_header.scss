@@ -424,17 +424,18 @@
 @media (max-width: 767.98px) {
 
   .header {
+    height: 94vh;
     min-height: 550px; //??
     background-image: url(../images/bg-rectangle-sm.png);
 
     &__navbar {
-      height: 15vh;
+      height: 14vh;
       min-height: 83px;
       max-height: 120px;
     }
 
     &__hero {
-      height: 85vh;
+      height: 80vh;
       min-height: 467px;
       max-height: 680px;
       position: relative;
@@ -481,14 +482,24 @@
       font-size: 17px;
     }
 
-    // &__sale {
+    &__sale {
 
-    //   .hero-article__sale-left-text {}
+      .hero-article__sale-left-text {
+        font-size: 1.7rem;
+        
+      }
 
-    //   .hero-article__sale-right-text {}
-    // }
+      .hero-article__sale-right-text {
+        font-size: 5rem;
+        
+      }
+    }
 
-    // &__order-btn {}
+    &__order-btn {
+      margin-bottom: 10px;
+      font-size: 1.7rem;
+      
+    }
   }
 
   .hero-dish {

@@ -396,16 +396,17 @@ html {
 
 @media (max-width: 767.98px) {
   .header {
+    height: 94vh;
     min-height: 550px;
     background-image: url(../images/bg-rectangle-sm.png);
   }
   .header__navbar {
-    height: 15vh;
+    height: 14vh;
     min-height: 83px;
     max-height: 120px;
   }
   .header__hero {
-    height: 85vh;
+    height: 80vh;
     min-height: 467px;
     max-height: 680px;
     position: relative;
@@ -432,6 +433,16 @@ html {
   }
   .hero-article__subtitle {
     font-size: 17px;
+  }
+  .hero-article__sale .hero-article__sale-left-text {
+    font-size: 1.7rem;
+  }
+  .hero-article__sale .hero-article__sale-right-text {
+    font-size: 5rem;
+  }
+  .hero-article__order-btn {
+    margin-bottom: 10px;
+    font-size: 1.7rem;
   }
   .hero-dish {
     display: none;
