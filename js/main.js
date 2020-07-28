@@ -14,8 +14,10 @@ console.log('sadsa')
 
 $(document).ready(function () {
 	$('.navbar-top-row__burger').click(function (event) {
+		event.preventDefault();
+
 		$('.navbar-top-row__burger').toggleClass('navbar-top-row__burger_active');
-		
+
 		$('.navbar-top-row').toggleClass('navbar-top-row_active');
 		$('.navbar-top-row__logo').toggleClass('unactive');
 		$('.navbar-top-row__phone').toggleClass('active');
