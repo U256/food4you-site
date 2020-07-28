@@ -5,8 +5,6 @@
   max-height: 1080px;
   background: url(../images/bg-rectangle.png) 0 0/100% 100% no-repeat;
 
-  
-
   &__navbar {
     height: 20vh;
     min-height: 140px;
@@ -30,7 +28,12 @@
   justify-content: space-between;
   margin-bottom: 18px;
 
-  &__logo {}
+  &__logo {
+    h1 {
+      font-size: 2px;
+      color: transparent;
+    }
+  }
 
   &__phone {}
 }
@@ -38,18 +41,19 @@
   position: relative;
   padding-right: 45px;
   text-transform: uppercase;
-  font-weight: 700;
-
+  
   &__title {
+    font-weight: 700;
     text-align: right;
     padding-top: 5px;
     font-size: 1.7rem;
-    line-height: 2.2rem;
+    line-height: 2.1rem;
   }
 
   &__number {
+    font-weight: 700;
     font-size: 2.9rem;
-    line-height: 3.2rem;
+    line-height: 3.1rem;
   }
 
   &__phone-pic {
@@ -103,6 +107,7 @@
 
   &__title {
     max-width: 650px;
+    margin-bottom: 15px;
     font-size: 90px;
   }
 
@@ -142,7 +147,6 @@
   }
 
   &__order-btn {
-    //margin-bottom: 158px;
     width: 227px;
     height: 58px;
     border: 1px solid #000000;
@@ -368,12 +372,11 @@
     flex: 0 1 56%;
 
     &__question {
-      font-size: 4.6rem;
+      font-size: 4.3rem;
     }
 
     &__title {
-      font-size: 5rem;
-      margin-bottom: 20px;
+      font-size: 5rem;      
     }
 
     &__subtitle {
@@ -508,7 +511,10 @@
 
   .hero-decorations {
 
-    &__leaf {}
+    &__leaf {
+      left: 15px;
+      top: 20px;
+    }
 
     &__tomat {
       top: 30px;
@@ -535,7 +541,7 @@
 @media (max-width: 575.98px) {
   .header {
     height: 94vh;
-    min-height: 520px; //??
+    min-height: 520px; 
     max-height: 658px;
     background-image: url(../images/bg-rectangle-sm.png);
 
@@ -578,6 +584,7 @@
       height: 45px;
     }
   }
+
   .hero-decorations {
     &__tomat {
       display: none;

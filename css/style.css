@@ -60,23 +60,29 @@ html {
   margin-bottom: 18px;
 }
 
+.navbar-top-row__logo h1 {
+  font-size: 2px;
+  color: transparent;
+}
+
 .navbar-phone {
   position: relative;
   padding-right: 45px;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .navbar-phone__title {
+  font-weight: 700;
   text-align: right;
   padding-top: 5px;
   font-size: 1.7rem;
-  line-height: 2.2rem;
+  line-height: 2.1rem;
 }
 
 .navbar-phone__number {
+  font-weight: 700;
   font-size: 2.9rem;
-  line-height: 3.2rem;
+  line-height: 3.1rem;
 }
 
 .navbar-phone__phone-pic {
@@ -140,6 +146,7 @@ html {
 
 .hero-article__title {
   max-width: 650px;
+  margin-bottom: 15px;
   font-size: 90px;
 }
 
@@ -354,11 +361,10 @@ html {
             flex: 0 1 56%;
   }
   .hero-article__question {
-    font-size: 4.6rem;
+    font-size: 4.3rem;
   }
   .hero-article__title {
     font-size: 5rem;
-    margin-bottom: 20px;
   }
   .hero-article__subtitle {
     font-size: 20px;
@@ -447,6 +453,10 @@ html {
   .hero-dish {
     display: none;
   }
+  .hero-decorations__leaf {
+    left: 15px;
+    top: 20px;
+  }
   .hero-decorations__tomat {
     top: 30px;
     left: 85%;
@@ -511,48 +521,42 @@ html {
 
 @font-face {
   font-family: 'Gabelisa';
-  src: url("fonts/Gabelisa.eot");
-  src: local("☺"), url("fonts/Gabelisa.woff") format("woff"), url("fonts/Gabelisa.ttf") format("truetype"), url("fonts/Gabelisa.svg") format("svg");
+  src: local("☺"), url("fonts/Gabelisa.woff") format("woff"), url("fonts/Gabelisa.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Fredericka';
-  src: url("fonts/FrederickatheGreat-Regular.eot");
-  src: local("☺"), url("fonts/FrederickatheGreat-Regular.woff") format("woff"), url("fonts/FrederickatheGreat-Regular.ttf") format("truetype"), url("fonts/FrederickatheGreat-Regular.svg") format("svg");
+  src: local("☺"), url("fonts/FrederickatheGreat-Regular.woff") format("woff"), url("fonts/FrederickatheGreat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
+  src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("fonts/Montserrat-ExtraBold.eot");
-  src: local("☺"), url("fonts/Montserrat-ExtraBold.woff") format("woff"), url("fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("fonts/Montserrat-ExtraBold.svg") format("svg");
+  src: local("☺"), url("fonts/Montserrat-ExtraBold.woff") format("woff"), url("fonts/Montserrat-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("fonts/Montserrat-Regular.eot");
-  src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
+  src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("fonts/Montserrat-Medium.eot");
-  src: local("☺"), url("fonts/Montserrat-Medium.woff") format("woff"), url("fonts/Montserrat-Medium.ttf") format("truetype"), url("fonts/Montserrat-Medium.svg") format("svg");
+  src: local("☺"), url("fonts/Montserrat-Medium.woff") format("woff"), url("fonts/Montserrat-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }

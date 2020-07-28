@@ -7,7 +7,7 @@ $(document).ready(function () {
 		//autoplay: true,
 		prevArrow: '<button class="arrow prev"></button>',
 		nextArrow: '<button class="arrow next"></button>',
-		autoplaySpeed: 8000,
+		autoplaySpeed: 7000,
 		slidesToShow: 1,
 		responsive: [
 			{
