@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   height: 100vh;
   margin-bottom: 8rem;
   min-height: 700px;
@@ -9,8 +10,7 @@
     height: 20vh;
     min-height: 140px;
     max-height: 216px;
-    margin: 0 58px;
-    padding-top: 40px;
+    
     font-size: 1.6rem;
   }
 
@@ -26,9 +26,11 @@
 .navbar-top-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 18px;
+  margin: 0 58px 18px;
+  padding-top: 40px;
 
   &__logo {
+
     h1 {
       font-size: 2px;
       color: transparent;
@@ -36,6 +38,10 @@
   }
 
   &__phone {}
+
+  &__burger {
+    display: none;
+  } 
 }
 .navbar-phone {
   position: relative;
@@ -46,14 +52,14 @@
     font-weight: 700;
     text-align: right;
     padding-top: 5px;
-    font-size: 1.7rem;
-    line-height: 2.1rem;
+    font-size: 17px;
+    line-height: 21px;
   }
 
   &__number {
     font-weight: 700;
-    font-size: 2.9rem;
-    line-height: 3.1rem;
+    font-size: 29px;
+    line-height: 31px;
   }
 
   &__phone-pic {
@@ -63,7 +69,7 @@
   }
 }
 .navbar-nav-row {
-  margin-bottom: 10px;
+  margin: 0 58px 10px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3.33px;
@@ -299,9 +305,9 @@
     }
   }
 
-  .navbar-nav-row {
-    margin-bottom: 40px;
-  }
+  // .navbar-nav-row {
+  //   //margin-bottom: 40px;
+  // }
 
   .hero-article {
     padding-left: 15px;
@@ -341,9 +347,7 @@
 
     &__navbar {
       min-height: 120px;
-      max-height: 160px;
-      margin: 0 30px;
-      padding-top: 20px;
+      max-height: 160px;      
     }
 
     &__hero {
@@ -354,11 +358,22 @@
   }
 
   .navbar-top-row {
-    margin-bottom: 35px;
+    margin: 0 30px 35px;
+    padding-top: 20px;
 
     &__logo {}
 
     &__phone {}
+  }
+
+  .navbar-nav-row {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.33px;
+
+    &__li {
+      margin-right: 35px;
+    }
   }
 
   .hero-block__dish {
@@ -428,7 +443,7 @@
 
   .header {
     height: 94vh;
-    min-height: 550px; //??
+    min-height: 550px;
     background-image: url(../images/bg-rectangle-sm.png);
 
     &__navbar {
@@ -442,27 +457,86 @@
       min-height: 467px;
       max-height: 680px;
       position: relative;
-      margin: 0;     
+      top: 0; left: 0;
+      margin: 0;    
+      z-index: 2;
     }
   }
 
   .navbar-top-row {
+    
+    &_active {
+      margin: 0;
+      position: fixed;
+      padding: 20px 30px 0 0;
+      width: 100%;
+      height: 100vh;
+      left: 0; top: 0;
+      background-color: #eee;
+      opacity: .85;
+    }
+    
+    z-index: 11;
 
-    // &__logo {}
+    &__logo {
+      position: relative;
+      z-index: 2;
+      max-height: 100px;
+      visibility: visible;
+    }
 
     &__phone {
-      display: none;
+      position: absolute;
+      top: 20%; left: 0;
+      width: 100%;
+      visibility: hidden;
     }
+
+    &__burger {
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin: 15px 15px 0 0;
+
+      &_active {
+        //change bg
+      }
+      
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+    } 
+    
   }
 
-  //.navbar-phone {} //скрыт
+  .navbar-phone {
+    width: 244px;
+    margin: 0 auto;
+  }
 
   .navbar-nav-row {
-    display: none;
-    &__ul {}
+    position: fixed;
+    left: 0; top: 40%;
+    width: 100%;
+    text-align: center;
+    z-index: 15;
+    margin: 0;
+    visibility: hidden;
+    
+    &__ul {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+    }
 
     &__li {
-      a {}
+      
+      margin-bottom: 35px;
+      margin-right: 0;
+
+      a {font-size: 3rem;}
     }
   }
 
@@ -560,6 +634,19 @@
     }
   }
 
+  .navbar-top-row {
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      
+      img {
+        width: 80%;
+        max-width: 300px;
+      }
+    }
+  }
+
   .hero-article {
     margin: 0 auto;
     flex: 0 0 100%;
@@ -591,4 +678,3 @@
     }
   }
 }
-

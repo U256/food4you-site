@@ -17,6 +17,15 @@ html {
    text-transform: uppercase;
 }
 
+.active {
+   visibility: visible !important;
+}
+
+.unactive {
+   visibility: hidden !important;
+   width: 1px; height: 1px;
+}
+
 @import '_header';
 @import '_fonts';
 @import '_top-dishes';
