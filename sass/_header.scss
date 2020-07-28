@@ -465,6 +465,8 @@
 
   .navbar-top-row {
 
+    z-index: 11;
+
     &_active {
       margin: 0;
       position: fixed;
@@ -478,8 +480,6 @@
       transition: background-color 0.6s ease;
     }
     
-    z-index: 11;
-
     &__logo {
       color: transparent;
       position: relative;
@@ -493,6 +493,8 @@
       top: 20%; left: 0;
       width: 100%;
       visibility: hidden;
+      opacity: 0.1;
+      transition: opacity 1s ease 0.6s;
     }
 
     &__burger {
