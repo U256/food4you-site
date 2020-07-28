@@ -11,6 +11,11 @@ console.log('sadsa')
 //navbar - top - row__phone_active -toggle to active
 
 
+if (window.matchMedia('(max-width: 768px)').matches) {
+	$('.navbar-nav-row, .navbar-top-row__phone').addClass('unactive');
+} else {
+	$('.navbar-nav-row, .navbar-top-row__phone').deleteClass('unactive');
+}
 
 $(document).ready(function () {
 	$('.navbar-top-row__burger').click(function (event) {
@@ -20,8 +25,8 @@ $(document).ready(function () {
 
 		$('.navbar-top-row').toggleClass('navbar-top-row_active');
 		$('.navbar-top-row__logo').toggleClass('unactive');
-		$('.navbar-top-row__phone').toggleClass('active');
+		$('.navbar-top-row__phone').toggleClass('active unactive');
 
-		$('.navbar-nav-row').toggleClass('active');
+		$('.navbar-nav-row').toggleClass('active unactive');
 	});
 });

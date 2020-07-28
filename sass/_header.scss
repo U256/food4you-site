@@ -41,6 +41,10 @@
 
   &__burger {
     display: none;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons/burger-icon.svg) center/contain no-repeat;
+    transition: background-image 0.5s ease 0.2s; 
   } 
 }
 .navbar-phone {
@@ -473,7 +477,6 @@
       padding: 20px 30px 0 0;
       width: 100%;
       height: 100vh;
-      max-height: 100vh;
       left: 0; top: 0;
       background-color: #eee;
       opacity: .85;
@@ -489,30 +492,23 @@
     }
 
     &__phone {
-      position: absolute;
+      position: fixed;
       top: 20%; left: 0;
       width: 100%;
+      z-index: 15;
       visibility: hidden;
-      opacity: 0.1;
-      transition: opacity 1s ease 0.6s;
+      opacity: 0;
     }
 
     &__burger {
       display: block;
       position: relative;
-      width: 50px;
-      height: 50px;
-      margin-top: 15px;
+      z-index: 100;
+      margin-top: 15px;     
 
       &_active {       
-        //change bg
+        background: url(../images/icons/close-icon.svg) 0 0/contain no-repeat;
       }
-      
-      img {
-        width: 50px;
-        height: 50px;
-      }
-
     } 
     
   }
@@ -530,8 +526,8 @@
     z-index: 15;
     margin: 0;
     visibility: hidden;
-    opacity: 0.1;
-    transition: opacity  1s ease 0.6s;
+    opacity: 0;
+    transition: opacity 1s ease 0.6s;
     
     &__ul {
       display: flex;
