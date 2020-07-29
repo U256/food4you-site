@@ -644,6 +644,10 @@
     &__logo {
       display: flex;
       align-items: center;
+
+      &_unactive {
+        margin-top: -17px;
+      }
       
       img {
         width: 80%;

@@ -621,6 +621,9 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
+  .navbar-top-row__logo_unactive {
+    margin-top: -17px;
+  }
   .navbar-top-row__logo img {
     width: 80%;
     max-width: 300px;
