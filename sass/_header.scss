@@ -1,7 +1,8 @@
 .header {
-  position: relative;
-  height: 100vh;
   margin-bottom: 8rem;
+  position: relative;
+  top: 0; left: 0;
+  height: 100vh; 
   min-height: 700px;
   max-height: 1080px;
   background: url(../images/bg-rectangle.png) 0 0/100% 100% no-repeat;
@@ -10,19 +11,20 @@
     height: 20vh;
     min-height: 140px;
     max-height: 216px;
-    
     font-size: 1.6rem;
   }
 
   &__hero {
     display: flex;
     position: relative;
+    top: 0; left: 0;
     height: 80vh;
     min-height: 560px;
     max-height: 864px;
     margin: 0 15px;
   }
 }
+
 .navbar-top-row {
   display: flex;
   justify-content: space-between;
@@ -37,7 +39,7 @@
     }
   }
 
-  &__phone {}
+  //&__phone {}
 
   &__burger {
     display: none;
@@ -46,7 +48,12 @@
     background: url(../images/icons/burger-icon.svg) center/contain no-repeat;
     transition: background-image 0.5s ease 0.2s; 
   } 
+
+  &__shield {
+    display: none;
+  }
 }
+
 .navbar-phone {
   position: relative;
   padding-right: 45px;
@@ -72,6 +79,7 @@
     right: 0;
   }
 }
+
 .navbar-nav-row {
   margin: 0 58px 10px;
   font-weight: 700;
@@ -122,16 +130,21 @@
   }
 
   &__subtitle {
+    position: relative;
+    padding-bottom: 35px;
     margin-bottom: 35px;
     font-size: 2.7rem;
     font-weight: 700;
     text-transform: uppercase;
-  }
-  &__line {
-    margin-bottom: 35px;
-    width: 68%;
-    height: 0.5px;
-    background-color: #000;
+
+    &::after {
+      content: ' ';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%;
+      height: 0.5px;
+      background-color: #000;
+    }
   }
 
   &__sale {
@@ -177,8 +190,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  &__leaf {
 
+  &__leaf {
     position: absolute;
     background: url(../images/header-decorations/Leaf.png) no-repeat 0 0/contain;
     top: 2%;
@@ -208,8 +221,8 @@
   &__leaf2 {
     position: absolute;
     background: url(../images/header-decorations/Leaf2.png) no-repeat 0 0/contain;
-    bottom: 7%;
-    right: 5%;
+    bottom: 5%;
+    right: 4%;
     width: 8.3rem;
     height: 11rem;
   }
@@ -271,24 +284,8 @@
     }
   }
 
-
   .hero-block__dish {
-    background: url(../images/hero-pasta.png) center/contain no-repeat;
-  }
-  
-
-  .hero-decorations {
-
-    &__leaf {}
-
-    &__tomat {}
-
-    &__pasta {}
-
-    &__leaf2 {
-    }
-
-    &__round-spaghetti {}
+    background-position: center;
   }
 }
 
@@ -309,10 +306,6 @@
     }
   }
 
-  // .navbar-nav-row {
-  //   //margin-bottom: 40px;
-  // }
-
   .hero-article {
     padding-left: 15px;
     padding-right: 15px;
@@ -332,14 +325,6 @@
       top: -38px;
       left: 0;
     }
-
-    &__tomat {}
-
-    &__pasta {}
-
-    &__leaf2 {}
-
-    &__round-spaghetti {}
   }
 }
 
@@ -364,30 +349,20 @@
   .navbar-top-row {
     margin: 0 30px 35px;
     padding-top: 20px;
-
-    &__logo {}
-
-    &__phone {}
   }
 
   .navbar-nav-row {
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3.33px;
 
     &__li {
       margin-right: 35px;
     }
   }
 
-  .hero-block__dish {
-    background: url(../images/hero-pasta.png) center/contain no-repeat;
+  .hero-dish {
     flex: 0 1 44%;
   }
 
   .hero-article {
-    display: flex;
-    align-items: center;
     flex: 0 1 56%;
 
     &__question {
@@ -401,14 +376,11 @@
     &__subtitle {
       font-size: 20px;
       margin-bottom: 15px;
-    }
-
-    &__line {
-      margin-bottom: 15px;
+      padding-bottom: 25px;
     }
 
     &__order-btn {
-      margin-bottom: 30px;
+      margin-bottom: 30px; /////////
     }
   }
 
@@ -435,8 +407,7 @@
     }
 
     &__round-spaghetti {
-      background: url(../images/header-decorations/Spaghetti.png) no-repeat center right/contain;
-      bottom: -136px;
+      background-size: contain;
       left: -105px;
       width: 200px;
     }
@@ -460,57 +431,83 @@
       height: 80vh;
       min-height: 467px;
       max-height: 680px;
-      position: relative;
-      top: 0; left: 0;
       margin: 0;    
-      z-index: 2;
     }
   }
 
   .navbar-top-row {
 
+    transition: background-color 0.6s ease;
     z-index: 11;
 
     &_active {
       margin: 0;
-      position: fixed;
       padding: 20px 30px 0 0;
+      position: fixed;
+      left: 0; top: 0;
       width: 100%;
       height: 100vh;
-      left: 0; top: 0;
-      background-color: #eee;
-      opacity: .85;
-      transition: background-color 0.6s ease;
     }
     
     &__logo {
+      transition: opacity 0.4s ease,  visibility 0.4s ease;
       color: transparent;
       position: relative;
       z-index: 2;
       max-height: 100px;
       visibility: visible;
+
+      &_unactive {
+        padding-left: 30px;
+        visibility: hidden;
+        opacity: 0;
+      }  
     }
 
     &__phone {
+      transition: opacity 0.4s ease,  visibility 0.4s ease;
       position: fixed;
       top: 20%; left: 0;
       width: 100%;
       z-index: 15;
       visibility: hidden;
       opacity: 0;
+
+      &_active {
+        visibility: visible;
+        opacity: 1;
+      }
     }
 
     &__burger {
       display: block;
       position: relative;
       z-index: 100;
-      margin-top: 15px;     
+      margin-top: 15px;    
+      color: transparent; 
 
       &_active {       
-        background: url(../images/icons/close-icon.svg) 0 0/contain no-repeat;
+        background-image: url(../images/icons/close-icon.svg);
       }
     } 
-    
+
+    &__shield {
+      margin: 0;
+      display: block;
+      position: fixed;
+      left: 0; top: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #eee;
+      z-index: 11;
+      opacity: .85;
+      transform: translate(0, -100%);
+      transition: transform 0.4s ease;
+
+      &_active {
+        transform: translate(0, 0);
+      }
+    }
   }
 
   .navbar-phone {
@@ -519,15 +516,20 @@
   }
 
   .navbar-nav-row {
+    margin: 0;
     position: fixed;
     left: 0; top: 40%;
     width: 100%;
     text-align: center;
-    z-index: 15;
-    margin: 0;
     visibility: hidden;
+    z-index: 15;
     opacity: 0;
-    transition: opacity 1s ease 0.6s;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+
+    &_active {
+      visibility: visible;
+      opacity: 1;
+    }
     
     &__ul {
       display: flex;

@@ -17,20 +17,6 @@ html {
    text-transform: uppercase;
 }
 
-.active {
-   visibility: visible !important;
-   opacity: 1 !important;
-   transition: opacity 1s ease 0.6s;
-}
-
-.unactive {
-   visibility: hidden !important;
-   width: 1px; height: 1px;
-   opacity: 0 !important;
-}  
-
-
-
 @import '_header';
 @import '_fonts';
 @import '_top-dishes';

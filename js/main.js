@@ -11,11 +11,12 @@ console.log('sadsa')
 //navbar - top - row__phone_active -toggle to active
 
 
-if (window.matchMedia('(max-width: 768px)').matches) {
-	$('.navbar-nav-row, .navbar-top-row__phone').addClass('unactive');
-} else {
-	$('.navbar-nav-row, .navbar-top-row__phone').deleteClass('unactive');
-}
+//let timerRepeat = setTimeout(func | code, [delay], [arg1], [arg2]);
+
+// if (window.matchMedia('(max-width: 767px)').matches) {
+// 	$('.navbar-nav-row, .navbar-top-row__phone').addClass('unactive');
+// }
+
 
 $(document).ready(function () {
 	$('.navbar-top-row__burger').click(function (event) {
@@ -24,9 +25,10 @@ $(document).ready(function () {
 		$('.navbar-top-row__burger').toggleClass('navbar-top-row__burger_active');
 
 		$('.navbar-top-row').toggleClass('navbar-top-row_active');
-		$('.navbar-top-row__logo').toggleClass('unactive');
-		$('.navbar-top-row__phone').toggleClass('active unactive');
+		$('.navbar-top-row__logo').toggleClass('navbar-top-row__logo_unactive');
+		$('.navbar-top-row__phone').toggleClass('navbar-top-row__phone_active');
+		$('.navbar-top-row__shield').toggleClass('navbar-top-row__shield_active');
 
-		$('.navbar-nav-row').toggleClass('active unactive');
+		$('.navbar-nav-row').toggleClass('navbar-nav-row_active');
 	});
 });
