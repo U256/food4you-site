@@ -472,6 +472,7 @@ html {
     opacity: 1;
   }
   .navbar-top-row__burger {
+    cursor: pointer;
     display: block;
     position: relative;
     z-index: 100;
