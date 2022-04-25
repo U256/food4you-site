@@ -1,6 +1,3 @@
-console.log('sadsa')
-
-
 // let burger = document.getElementsByClassName('navbar-top-row__burger')[0];
 // burger.addEventListener("click", function (event) {
 // 	document.getElementsByClassName('navbar-top-row')[0].toggleClass('navbar-top-row_active');
@@ -16,6 +13,7 @@ console.log('sadsa')
 // if (window.matchMedia('(max-width: 767px)').matches) {
 // 	$('.navbar-nav-row, .navbar-top-row__phone').addClass('unactive');
 // }
+import '../sass/style.scss'
 
 
 $(document).ready(function () {
