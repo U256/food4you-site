@@ -13,6 +13,9 @@
 // if (window.matchMedia('(max-width: 767px)').matches) {
 // 	$('.navbar-nav-row, .navbar-top-row__phone').addClass('unactive');
 // }
+import jquery from "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+import slick from "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+import slickInit from "./slick-slider-init-file.js"
 import '../sass/style.scss'
 
 
