@@ -11,7 +11,7 @@ import SpriteLoaderPlugin from 'svg-sprite-loader/plugin.js'
 
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = process.env.NODE_ENV === 'production'
-const {dirname, resolve} = path
+const { dirname, resolve } = path
 const __filename = fileURLToPath(import.meta.url)
 
 const generatePath = (template = 'src') => resolve(dirname(__filename), template)
@@ -90,6 +90,15 @@ const generateJsLoader = (additionalPreset) => {
 
     return loaders
 }
+const generateFileCopyPatterns = () => {
+    const dest = {to: generatePath('dist')}
+
+    return [
+        {from: generatePath('src/assets/*.ico'), ...dest},
+        {from: generatePath('src/assets/*.txt'), ...dest},
+        {from: generatePath('src/images/**/*.(png|gif|jpg|jpeg)'), ...dest},
+    ]
+}
 
 const config = {
     context: generatePath(),
@@ -117,12 +126,7 @@ const config = {
     plugins: [
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: resolve(dirname(__filename), 'src/favicon.ico'),
-                    to: resolve(dirname(__filename), 'dist')
-                }
-            ]
+            patterns: generateFileCopyPatterns()
         }),
         new MiniCssExtractPlugin({
             filename: generateFilename('css')
@@ -130,6 +134,16 @@ const config = {
         new SpriteLoaderPlugin({
             plainSprite: true
         }),
+        // TODO: implement load by "<-- t: template -->" comment
+        // new HtmlReplaceWebpackPlugin([{
+        //     pattern: /(<!--\s*t:\s*[a-zA-Z]+\s*-->)/g,
+        //     replacement: (match) => {
+        //         const finderRegexp = new RegExp('(?<=\\s*t:\\s*)[a-zA-Z]+')
+        //         const value = (finderRegexp.exec(match) || [])[0]
+        //
+        //         return `<%= require(\'html-loader!./templates/${value}.html\').default %>`
+        //     }
+        // }]),
         ...pluginsForHtmlPages
     ],
     module: {
