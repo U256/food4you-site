@@ -1,6 +1,3 @@
-console.log('sadsa')
-
-
 // let burger = document.getElementsByClassName('navbar-top-row__burger')[0];
 // burger.addEventListener("click", function (event) {
 // 	document.getElementsByClassName('navbar-top-row')[0].toggleClass('navbar-top-row_active');
@@ -16,6 +13,10 @@ console.log('sadsa')
 // if (window.matchMedia('(max-width: 767px)').matches) {
 // 	$('.navbar-nav-row, .navbar-top-row__phone').addClass('unactive');
 // }
+import jquery from "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+import slick from "//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+import slickInit from "./slick-slider-init-file.js"
+import '../sass/style.scss'
 
 
 $(document).ready(function () {
